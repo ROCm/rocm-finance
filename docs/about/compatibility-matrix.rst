@@ -1,0 +1,35 @@
+.. meta::
+   :description: AMD ROCm-Finance compatibility information
+   :keywords: amd, rocm, finance, gpu, instinct, sdk, system, requirements, compatibility, support, version, upstream, library, env
+
+*********************************
+ROCm-Finance compatibility matrix
+*********************************
+
+This table provides system and library compatibility information for the
+ROCm-Finance libraries. 
+
+.. list-table::
+   :header-rows: 1
+
+   * - ROCm-Finance version
+     - Operating system
+     - ROCm version
+     - Python version
+     - AMD Instinct GPU
+     - Components
+
+   * - 25.11
+     - 
+       * Ubuntu 24.04
+       * Ubuntu 22.04
+     - 
+       * 7.0.2
+       * 6.4.4
+     - 
+       * 3.12
+       * 3.10
+     - MI300X (gfx942)
+     -
+       * LightGBM 4.6.0.99
+       * ThunderGBM 0.3.16

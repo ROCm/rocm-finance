@@ -1,0 +1,6 @@
+[submodule "LightGBM"]
+	path = LightGBM
+	url = https://github.com/ROCm/LightGBM
+[submodule "ThunderGBM"]
+	path = ThunderGBM
+	url = https://github.com/ROCm/ThunderGBM
