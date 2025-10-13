@@ -1,0 +1,39 @@
+# Variables of the form ${<variable>} are substituted, currently the following
+# list is supported:
+#   - ${branch} (or {branch}) the name of the current branch
+#   - ${url} (or {url}) github url of the current project
+#   - ${project:<project_name>} base url of the documentation of <project_name>
+#     based on intersphinx_mapping.
+# These comments will also be removed.
+defaults:
+  numbered: False
+  maxdepth: 6
+root: index
+subtrees:
+  - entries:
+      - file: about/release-notes.md
+        title: Release notes
+      - file: about/compatibility-matrix.md
+        title: Compatibility matrix
+  - caption: Install
+    entries:
+      - file: install/prerequisites.rst
+        title: Prerequisites
+      - file: install/install.rst
+        title: Install ROCm-Finance
+  - caption: Components
+    entries:
+      - url: https://rocm.docs.amd.com/projects/xgboost/en/${branch}/
+        title: XGBoost
+      - url: https://rocm.docs.amd.com/projects/lightgbm/en/${branch}/
+        title: LightGBM
+      - url: https://rocm.docs.amd.com/projects/thundergbm/en/${branch}/
+        title: ThunderGBM
+  - caption: Tutorial
+    entries:
+      - url: https://github.com/ROCm/rocm-finance/tree/release/26.01/examples
+        title: Examples
+  - caption: About
+    entries:
+      - file: about/license.rst
+        title: License

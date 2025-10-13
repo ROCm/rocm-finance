@@ -1,0 +1,9 @@
+[submodule "xgboost"]
+	path = xgboost
+	url = https://github.com/rocm/xgboost
+[submodule "LightGBM"]
+	path = LightGBM
+	url = https://github.com/ROCm/LightGBM
+[submodule "ThunderGBM"]
+	path = ThunderGBM
+	url = git@github.com:AMD-AIOSS/ThunderGBM.git

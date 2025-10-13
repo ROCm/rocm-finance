@@ -1,0 +1,11 @@
+a svg {
+  color: var(--pst-color-text-base);
+}
+
+a svg:hover {
+  color: var(--pst-color-link-hover);
+}
+
+td ul {
+  padding-left: 1rem;
+}
