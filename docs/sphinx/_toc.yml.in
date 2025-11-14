@@ -1,0 +1,41 @@
+# Variables of the form ${<variable>} are substituted, currently the following
+# list is supported:
+#   - ${branch} (or {branch}) the name of the current branch
+#   - ${url} (or {url}) github url of the current project
+#   - ${project:<project_name>} base url of the documentation of <project_name>
+#     based on intersphinx_mapping.
+# These comments will also be removed.
+defaults:
+  numbered: False
+  maxdepth: 6
+root: index
+subtrees:
+  - entries:
+      - file: about/release-notes.md
+        title: Release notes
+      - file: about/compatibility-matrix.md
+        title: Compatibility matrix
+  - caption: Install
+    entries:
+      - file: install/prerequisites.rst
+        title: Prerequisites
+      - file: install/install.rst
+        title: Install ROCm Finance
+  - caption: Components
+    entries:
+      - url: https://advanced-micro-devices-xgboost-internal--36.com.readthedocs.build/en/36/
+        title: XGBoost
+      - url: https://advanced-micro-devices-lightgbm-internal--2.com.readthedocs.build/en/2/
+        title: LightGBM
+      - url: https://advanced-micro-devices-thundergbm-internal--3.com.readthedocs.build/en/3/
+        title: ThunderGBM
+  - caption: Related content
+    entries:
+      - url: https://rocm.docs.amd.com/latest/
+        title: ROCm documentation
+      - url: https://instinct.docs.amd.com/latest/
+        title: Instinct documentation
+  - caption: About
+    entries:
+      - file: about/license.rst
+        title: License
