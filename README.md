@@ -1,5 +1,5 @@
 # AMD ROCm™ Finance Domain
- he AMD ROCm™ platform is an open-source GPU computing ecosystem designed for high-performance workloads. Within this ecosystem, AMD ROCm™ Finance Domain includes official, production‑ready support for three industry‑leading Gradient Boosting Machine (GBM) libraries on ROCm 6.4 and 7.0 :
+The AMD ROCm™ platform is an open-source GPU computing ecosystem designed for high-performance workloads. Within this ecosystem, AMD ROCm™ Finance Domain includes official, production‑ready support for three industry‑leading Gradient Boosting Machine (GBM) libraries on ROCm 6.4 and 7.0 :
 
 |Library|Current Up‑stream Version*|Primary Finance Use‑Cases|
 | :-------: | :------: | :-------: |
