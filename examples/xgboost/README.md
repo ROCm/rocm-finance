@@ -1,4 +1,4 @@
-**ROCm XGBoost Credit Card Fraud Detection (Train/Test UI with Time Comparison)**
+## **ROCm XGBoost Credit Card Fraud Detection (Train/Test UI with Time Comparison)**
 
 **Accelerated Credit Card Fraud Detection using AMD ROCm GPU and XGBoost**
 
