@@ -95,7 +95,8 @@ Test Accuracy = 0.98734
 Test Precision = 0.87456
 Test Recall = 0.90123
 
-<img width="1369" height="768" alt="image" src="https://github.com/user-attachments/assets/f2dded9e-ff3d-4d44-967c-d7719a44ee15" />
+![Uploading Screenshot 2025-11-18 105541.png…]()
+
 
 Top 20 Predictions:
 
