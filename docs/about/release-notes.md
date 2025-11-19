@@ -42,15 +42,15 @@ See [ROCm Finance components](#rocm-finance-components) for details.
   - Version
   - Source
 
-* - [XGBoost](https://advanced-micro-devices-xgboost-internal--36.com.readthedocs.build/en/36/)
+* - [XGBoost](https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/)
   - 3.11
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/xgboost>`
 
-* - [LightGBM](https://advanced-micro-devices-lightgbm-internal--2.com.readthedocs.build/en/2/)
+* - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/)
   - 4.6.0.99
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/lightgbm>`
 
-* - [ThunderGBM](https://advanced-micro-devices-thundergbm-internal--3.com.readthedocs.build/en/3/)
+* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/)
   - 0.3.16
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
 

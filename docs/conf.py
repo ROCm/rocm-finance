@@ -34,18 +34,7 @@ external_projects_remote_repository = "rocm-finance"
 
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "generic",
-    "header_title": f"ROCm™ Finance Domain {RELEASE_VERSION}",
-    "header_link": "https://rocm.docs.amd.com/projects/rocm-finance-internal/en/latest",
-    "version_list_link": "https://rocm.docs.amd.com/projects/rocm-finance-internal/en/latest/release/versions.html",
-    "nav_secondary_items": {
-        "GitHub": "https://github.com/ROCm-Finance/ROCm-Finance",
-        "Community": "https://github.com/ROCm-Finance/ROCm-Finance/discussions",
-        "Blogs": "https://rocm.blogs.amd.com/",
-        "Instinct™ Docs": "https://instinct.docs.amd.com/",
-        "Support": "https://github.com/ROCm/ROCm/issues/new/choose",
-    },
-    "link_main_doc": True,
+    "flavor": "rocm-finance",
 }
 html_title = f"ROCm Finance {RELEASE_VERSION} documentation"
 html_context = {}
