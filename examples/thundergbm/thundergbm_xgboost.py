@@ -76,7 +76,7 @@ def train_model(max_depth, n_estimators, learning_rate):
         learning_rate=float(learning_rate),
         subsample=0.8,
         colsample_bytree=0.8,
-        n_jobs=-1,
+        n_jobs=1,
         verbosity=0
     )
 
@@ -107,8 +107,8 @@ def train_model(max_depth, n_estimators, learning_rate):
 
         # GPU-optimal settings
         max_num_bin=128,            # more parallel histogram work
-        n_parallel_trees=10,         # increase GPU thread blocks
-        min_child_weight=2,
+        n_parallel_trees=4,         # increase GPU thread blocks
+        min_child_weight=4,
         column_sampling_rate=0.8,   # avoid sampling overhead
         verbose=0,
         n_gpus=1
