@@ -36,8 +36,8 @@ html_theme = "rocm_docs_theme"
 html_theme_options = {
     "flavor": "generic",
     "header_title": f"ROCm™ Finance Domain {RELEASE_VERSION}",
-    "header_link": "https://rocm.docs.amd.com/projects/rocm-finance/en/latest",
-    "version_list_link": "https://rocm.docs.amd.com/projects/rocm-finance/en/latest/release/versions.html",
+    "header_link": "https://rocm.docs.amd.com/projects/rocm-finance-internal/en/latest",
+    "version_list_link": "https://rocm.docs.amd.com/projects/rocm-finance-internal/en/latest/release/versions.html",
     "nav_secondary_items": {
         "GitHub": "https://github.com/ROCm-Finance/ROCm-Finance",
         "Community": "https://github.com/ROCm-Finance/ROCm-Finance/discussions",

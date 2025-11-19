@@ -65,9 +65,9 @@ ROCm Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `XGBoost <https://advanced-micro-devices-xgboost-internal--36.com.readthedocs.build/en/36/>`__
-      * `LightGBM <https://advanced-micro-devices-lightgbm-internal--2.com.readthedocs.build/en/2/>`__
-      * `ThunderGBM <https://advanced-micro-devices-thundergbm-internal--3.com.readthedocs.build/en/3/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/>`__
 
    .. grid-item-card:: Related content
 

@@ -160,6 +160,6 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
 3. Install ROCm Finance libraries. See the following resources to get started:
 
-   * `Install XGBoost <https://advanced-micro-devices-xgboost-internal--36.com.readthedocs.build/en/36/install/install.html>`__
-   * `Install LightGBM <https://advanced-micro-devices-lightgbm-internal--2.com.readthedocs.build/en/2/install/install.html>`__
-   * `Install ThunderGBM <https://advanced-micro-devices-thundergbm-internal--3.com.readthedocs.build/en/3/install/install.html>`__
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/install/install.html>`__
+   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
+   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__

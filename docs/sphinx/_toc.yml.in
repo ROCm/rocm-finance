@@ -23,11 +23,11 @@ subtrees:
         title: Install ROCm Finance
   - caption: Components
     entries:
-      - url: https://advanced-micro-devices-xgboost-internal--36.com.readthedocs.build/en/36/
+      - url: https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/
         title: XGBoost
-      - url: https://advanced-micro-devices-lightgbm-internal--2.com.readthedocs.build/en/2/
+      - url: https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/
         title: LightGBM
-      - url: https://advanced-micro-devices-thundergbm-internal--3.com.readthedocs.build/en/3/
+      - url: https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/
         title: ThunderGBM
   - caption: Related content
     entries:
