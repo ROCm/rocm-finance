@@ -202,9 +202,7 @@ Precision: 0.81633
 Recall: 0.73512
 
 ```
-<img width="1637" height="826" alt="image" src="https://github.com/user-attachments/assets/c622a3e2-1375-434c-89cc-b37df5085fe6" />
-
-
+<img width="1602" height="854" alt="image" src="https://github.com/user-attachments/assets/b57aef01-0e87-44bd-a464-ec1215bb80f0" />
 
 ## Output Files
 
