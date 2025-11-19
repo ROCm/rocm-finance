@@ -1,6 +1,6 @@
 # ROCm ThunderGBM Credit Card Fraud Detection (IEEE-CIS Dataset Demo)
 
-**High-performance Fraud Detection with AMD ROCm and ThunderGBM**
+**Part 1- High-performance Fraud Detection with AMD ROCm and ThunderGBM**
 
 This project demonstrates an interactive **Gradio app** that trains and tests a **ThunderGBM model** on the IEEE-CIS credit card fraud dataset. 
 It leverages **AMD ROCm GPUs** for acceleration, supports feature preprocessing, and provides top predicted fraud transactions with full CSV export.
@@ -97,7 +97,6 @@ Test Recall = 0.90123
 
 <img width="1369" height="768" alt="Screenshot 2025-11-18 105541" src="https://github.com/user-attachments/assets/f65a8f1e-3fdd-406c-bbe2-eacdafef7067" />
 
-
 Top 20 Predictions:
 
 TransactionID	Test Fraud Probability	Fraud Probability
@@ -120,6 +119,106 @@ File Structure
 2. Adjust ThunderGBM hyperparameters: max_depth, n_estimators, learning_rate
 
 3. Cache location can be changed by editing CACHE_PATH
+
+**Part 2- Benchmarking ThunderGBM vs XGBoost using a Fraud Detection Demo with AMD ROCm**
+
+This section documents the benchmarking tool that compares:
+
+✔ XGBoost (CPU) vs ✔ ThunderGBM (GPU, ROCm) to measure real-world GPU acceleration on the IEEE-CIS dataset.
+
+## Purpose
+
+This standalone benchmarking script is designed to:
+
+1. Compare XGBoost vs ThunderGBM tree training performance
+
+2. Measure training time, AUC, accuracy, precision, recall
+
+3. Output GPU speedup factor
+
+4. Use the same IEEE-CIS dataset preprocessing pipeline
+
+5. Provide a simple CLI or Gradio interface
+
+
+## Requirements
+
+Install XGBoost (CPU version):
+``` bash
+pip install xgboost
+```
+
+Make sure ThunderGBM ROCm is installed:
+``` bash
+pip install thundergbm-0.3.16-py3-none-any.whl
+```
+▶️ Running the Benchmark Script
+
+Run:
+``` bash
+python3 thundergbm_xgboost.py
+```
+
+This will:
+
+1. Load (or preprocess) the IEEE-CIS dataset
+
+2. Train XGBoost on CPU
+
+3. Train ThunderGBM on GPU
+
+**Print:**
+
+1. CPU Training Time
+
+2. GPU Training Time
+
+3. Metrics for both engines
+
+4. Display an AMD-themed Gradio UI with:
+
+5. Training status output
+
+6. GPU metrics
+
+7. Top 20 predictions
+
+8. Full CSV export
+
+## Example Benchmark Output
+``` bash
+====== XGBOOST CPU RESULTS ======
+CPU Training Time: 12.441 sec
+AUC: 0.93891
+Accuracy: 0.92112
+Precision: 0.80977
+Recall: 0.72654
+
+====== THUNDERGBM GPU RESULTS ======
+GPU Training Time: 21.312 sec
+AUC: 0.93984
+Accuracy: 0.92201
+Precision: 0.81633
+Recall: 0.73512
+
+```
+
+## Output Files
+
+After running the benchmark you will get:
+
+full_predictions.csv     # Predictions using ThunderGBM GPU model
+
+
+## Integrating into Your Workflow
+
+You can embed the CPU-vs-GPU benchmarking logic into:
+
+1. Automated model performance pipelines
+
+2. ROCm performance demos
+
+3. ML model optimization comparisons
 
 ## License
 
