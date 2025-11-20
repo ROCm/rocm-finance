@@ -69,7 +69,7 @@ make -j
 **Build and Install python package**
 ```bash
 export CMAKE_PREFIX_PATH=/opt/rocm
-./build-python.sh install --gpu
+./build-python.sh install --rocm
 ```
 **Run the Python Script:**
 ```bash
