@@ -6,7 +6,8 @@ This code implements a binary classification model using LightGBM for a Home Cre
 
 
 ## Data loading and preprocessing
-**Kaggle Dataset** -  [Home Credit Default Risk dataset from Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data)
+**Kaggle Dataset** -  [Home Credit Default Risk dataset from Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data)  
+
 Loads training data from application_train.csv
 Separates features and target: The target variable is TARGET (indicating loan default), and features exclude TARGET and SK_ID_CURR (customer ID)
 Handles categorical features: Automatically identifies object-type columns and converts them to categorical data type for LightGBM
