@@ -5,8 +5,9 @@ from thundergbm import TGBMClassifier
 from scipy import sparse
 from sklearn.metrics import roc_auc_score, accuracy_score, precision_score, recall_score
 import os
+import time  # 
 
-CACHE_PATH = "/root/ieee_preprocessed.pkl"
+CACHE_PATH = "./ieee_preprocessed.pkl"
 
 # -------------------------
 # AMD UI colors
@@ -20,8 +21,8 @@ def load_and_preprocess():
         print("Loading cached preprocessed dataset…")
         return pd.read_pickle(CACHE_PATH)
 
-    trans_path = "/root/train_transaction.csv"
-    ident_path = "/root/train_identity.csv"
+    trans_path = "./train_transaction.csv"
+    ident_path = "./train_identity.csv"
 
     if not os.path.exists(trans_path):
         raise FileNotFoundError("Missing file: train_transaction.csv")
@@ -60,10 +61,10 @@ def train_model(max_depth, n_estimators, learning_rate):
     try:
         df = load_and_preprocess()
     except Exception as e:
-        return str(e), 0, 0, None, None, None
+        return str(e), 0, 0, None, None, None, 0  # ADD GPU TIME
 
     if "isFraud" not in df.columns:
-        return "ERROR: 'isFraud' not found.", 0, 0, None, None, None
+        return "ERROR: 'isFraud' not found.", 0, 0, None, None, None, 0  # ADD GPU TIME
 
     y = df["isFraud"]
     X = df.drop(columns=["isFraud"])
@@ -90,8 +91,11 @@ def train_model(max_depth, n_estimators, learning_rate):
     )
 
     print("Training ThunderGBM…")
+    start_gpu = time.time()                # <-- ADD THIS
     model.fit(X_train, y_train)
+    gpu_time = time.time() - start_gpu     # <-- ADD THIS
 
+    print(f"ThunderGBM GPU training time: {gpu_time:.2f} seconds")  # You can print or report this
     print("Predicting…")
     preds = model.predict(X_test)
 
@@ -117,19 +121,19 @@ def train_model(max_depth, n_estimators, learning_rate):
     }).sort_values(by="Test Fraud Probability", ascending=False)  # sorted descending (1 → 0)
 
     top_preds_df = results_df.head(20).reset_index(drop=True)
-
     full_preds_df = results_df.reset_index(drop=True)
 
     return (
         f"Training complete!\nTest ROC-AUC = {auc:.5f}\nTest Accuracy = {acc:.5f}\n"
-        f"Test Precision = {precision_s:.5f}\nTest Recall = {recall_s:.5f}",
+        f"Test Precision = {precision_s:.5f}\nTest Recall = {recall_s:.5f}\n"
+        f"ThunderGBM GPU training time: {gpu_time:.2f} seconds",  # <-- SHOW GPU TIME
         auc,
         acc,
         top_preds_df,
         full_preds_df,
-        model
+        model,
+        gpu_time                 # <-- RETURN GPU TIME
     )
-
 
 def predict_on_test(model):
     if model is None:
@@ -176,7 +180,8 @@ with gr.Blocks(css=custom_css, title="ROCm ThunderGBM Fraud Detection") as demo:
             n_estimators = gr.Number(value=500, label="Number of Trees")
             learning_rate = gr.Number(value=0.15, label="Learning Rate")
             train_btn = gr.Button("Train & Predict", variant="primary")
-            train_output = gr.Textbox(label="Training Status", interactive=False, lines=4)
+            train_output = gr.Textbox(label="Training Status", interactive=False, lines=8)  # <-- Make it a bit taller
+            gpu_time_box = gr.Number(value=0, label="ThunderGBM GPU Training Time (sec)")   # <-- ADD BOX
 
         with gr.Column(scale=1):
             auc_box = gr.Number(value=0, label="Test ROC-AUC")
@@ -188,19 +193,19 @@ with gr.Blocks(css=custom_css, title="ROCm ThunderGBM Fraud Detection") as demo:
             download_btn = gr.File(label="Download Full Predictions CSV")
 
     def run_training(md, ne, lr):
-        status, auc, acc, top_df, full_df, model = train_model(md, ne, lr)
+        status, auc, acc, top_df, full_df, model, gpu_time = train_model(md, ne, lr)
         if full_df is not None:
             full_df.to_csv("full_predictions.csv", index=False)
         else:
             full_df = pd.DataFrame()
-        return status, auc, acc, top_df, ("full_predictions.csv" if not full_df.empty else None), model
+        return status, auc, acc, top_df, ("full_predictions.csv" if not full_df.empty else None), model, gpu_time
 
     model_state = gr.State()
 
     train_btn.click(
         fn=run_training,
         inputs=[max_depth, n_estimators, learning_rate],
-        outputs=[train_output, auc_box, acc_box, top_preds, download_btn, model_state]
+        outputs=[train_output, auc_box, acc_box, top_preds, download_btn, model_state, gpu_time_box]  # <-- INCLUDE GPU TIME
     )
 
-demo.launch(server_name="0.0.0.0")
+demo.launch(server_name="0.0.0.0", share=True)
