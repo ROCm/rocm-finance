@@ -91,3 +91,5 @@ Early stopping, best iteration is:
 Validation AUC: 0.7578
 
 <img width="1327" height="1251" alt="image" src="https://github.com/user-attachments/assets/49e421a4-7c64-4f59-b216-c4d90dbf6f39" />
+
+Kaggle Dataset - https://www.kaggle.com/c/home-credit-default-risk/data
