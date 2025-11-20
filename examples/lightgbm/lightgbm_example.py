@@ -90,13 +90,14 @@ def train_lightgbm(data_path="application_train.csv",
     # -------------------------
     gpu_params = base_params.copy()
     gpu_params.update({
-        "device_type": "gpu",
+        "device_type": "cuda",
         "gpu_platform_id": 0,
         "gpu_device_id": 0,
         "num_threads": 16,
     })
 
     print("🚀 Training LightGBM model on ROCm GPU...")
+    print("GPU params:", gpu_params)
     start_gpu = time.time()
     model_gpu = lgb.train(
         gpu_params,
@@ -125,6 +126,7 @@ def train_lightgbm(data_path="application_train.csv",
         })
 
         print("🧠 Training LightGBM model on CPU for comparison...")
+        print("CPU params:", cpu_params)
         start_cpu = time.time()
         model_cpu = lgb.train(
             cpu_params,
@@ -231,7 +233,7 @@ with gr.Blocks(css=custom_css, title="ROCm LightGBM Home Credit") as demo:
         with gr.Column(scale=2):
             data_path = gr.Textbox(value="application_train.csv", label="Dataset path")
             num_leaves = gr.Number(value=2, label="num_leaves", precision=0)
-            learning_rate = gr.Number(value=0.03, label="Learning rate", precision=2)
+            learning_rate = gr.Number(value=0.03, label="Learning rate", precision=5)
             num_rounds = gr.Number(value=1000, label="Boost rounds", precision=0)
             max_depth = gr.Number(value=10, label="Max depth", precision=0)
             min_data_in_leaf = gr.Number(value=50, label="Min data in leaf", precision=0)
@@ -254,4 +256,4 @@ with gr.Blocks(css=custom_css, title="ROCm LightGBM Home Credit") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7866, share=False)
+    demo.launch(server_name="0.0.0.0", server_port=7866, share=True)
