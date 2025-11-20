@@ -233,7 +233,7 @@ ThunderGBM
 Gradio
  – Interactive web UI
 
-IEEE-CIS Fraud Detection Dataset
+IEEE-CIS Fraud Detection Dataset -  https://www.kaggle.com/competitions/ieee-fraud-detection/data 
 
 AMD ROCm
  – GPU acceleration platform
