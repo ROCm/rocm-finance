@@ -16,12 +16,13 @@ Creates train/validation split: Uses 80% for training, 20% for validation with a
 **Model Configuration**
 
 **LightGBM parameters:**
+```
 objective: 'binary' - Binary classification task
 metric: 'auc' - Uses AUC (Area Under Curve) as evaluation metric
 boosting_type: 'gbdt' - Gradient Boosting Decision Trees
 learning_rate: 0.05 - Conservative learning rate
 num_leaves: 31 - Maximum leaves per tree (controls model complexity)
-
+```
 **Training with Early Stopping**
 Early stopping: Stops training if validation metric doesn't improve for 50 rounds
 Logging: Prints progress every 50 iterations
@@ -37,49 +38,46 @@ Evaluation: Calculates AUC score on validation set and prints the result
 
 **Boost Libs**
 
+```bash
 sudo apt install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev
-
+```
 **OpenCL headers and ICD loader**
 
+```bash
 sudo apt install ocl-icd-opencl-dev
-
 sudo apt install opencl-headers
-
+```
 **Python tools**
-
+```bash
 pip install --upgrade --force-reinstall numpy pandas scikit-learn scipy setuptools
-
+```
 **Simple Build**
 Configure build folder and cmake, make sure you have cmake 3.8 or above
-
+```bash
 cmake -DUSE_ROCM=1 -B build -S .     - for Rocm 6.4
-
 cmake -DUSE_ROCM=1 -B build -S . -D CMAKE_PREFIX_PATH=/opt/rocm     - for Rocm 7.0
-
+```
 **To use GPU:**
-
+```bash
 cmake -DUSE_GPU=1 -DUSE_ROCM=1 -B build -S .
-
 cmake -DUSE_GPU=1 -DUSE_ROCM=1 -B build -S . -D CMAKE_PREFIX_PATH=/opt/rocm     - for Rocm 7.0
-
+```
 **Compile the lightGBM**
-
+```bash
 make -j
-
+```
 **Build and Install python package**
-
+```bash
 export CMAKE_PREFIX_PATH=/opt/rocm
-
 ./build-python.sh install --gpu
-
+```
 **Run the Python Script:**
-
+```bash
 ~/lightgbm_code# python lightgbm_cpu_homecredit.py  - for CPU only
-
 ~/lightgbm_code# python lightgbm_gpu_homecredit.py  - for GPU 
-
+```
 **Example Output:**
-
+```
 Training until validation scores don't improve for 50 rounds
 [50]    valid_0's auc: 0.747234
 [100]   valid_0's auc: 0.755118
@@ -89,7 +87,7 @@ Training until validation scores don't improve for 50 rounds
 Early stopping, best iteration is:
 [232]   valid_0's auc: 0.757778
 Validation AUC: 0.7578
-
+```
 <img width="1327" height="1251" alt="image" src="https://github.com/user-attachments/assets/49e421a4-7c64-4f59-b216-c4d90dbf6f39" />
 
 Kaggle Dataset - https://www.kaggle.com/c/home-credit-default-risk/data
