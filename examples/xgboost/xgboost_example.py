@@ -220,5 +220,5 @@ with gr.Blocks(css=custom_css, title="ROCm XGBoost Fraud Detection") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7865, share=False)
+    demo.launch(server_name="0.0.0.0", server_port=7865, share=True)
 
