@@ -1,13 +1,23 @@
+.. meta::
+   :description: Install ROCm Finance Expansion SDK libraries
+   :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, quick, start
+
 ********************
 Install ROCm Finance
 ********************
+
+This page provides brief guidance and recommendations on setting up
+a ROCm-enabled environment for financial computing workloads. This includes
+pulling and running prebuilt ROCm Docker images for supported Ubuntu versions
+and installing ROCm Finance libraries such as LightGBM, and
+ThunderGBM.
 
 .. _install-rocm-dev-docker:
 
 Install ROCm
 ============
 
-To get up and running quickly, a prebuilt ROCm-enabled environment is
+To get up and running quickly, a prebuilt ROCm-enabled container is
 recommended. The easiest way is to use the offical ROCm Docker images from
 Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 <rocm-install-on-linux:docker-rocm-images>` for more information.
@@ -18,7 +28,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
    .. tab-set::
 
-      .. tab-item:: ROCm 7.0
+      .. tab-item:: ROCm 7.0.2
          :sync: rocm7
 
          .. tab-set::
@@ -45,7 +55,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                <https://hub.docker.com/layers/rocm/dev-ubuntu-22.04/7.0.2-complete/images/sha256-a60cffc2d079dbdc7a54948766e21793abdfeaa2ea95af60214f975a1ce51d06>`__
                on Docker Hub.
 
-      .. tab-item:: ROCm 6.4
+      .. tab-item:: ROCm 6.4.4
          :sync: rocm6
 
          .. tab-set::
@@ -76,7 +86,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
    .. tab-set::
 
-      .. tab-item:: ROCm 7.0
+      .. tab-item:: ROCm 7.0.2
          :sync: rocm7
 
          .. tab-set::
@@ -117,7 +127,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                       --name rocm7 \
                       rocm/dev-ubuntu-22.04:7.0.2-complete
 
-      .. tab-item:: ROCm 6.4
+      .. tab-item:: ROCm 6.4.4
          :sync: rocm6
 
          .. tab-set::
@@ -158,8 +168,13 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                       --name rocm6 \
                       rocm/dev-ubuntu-22.04:6.4.4-complete
 
-3. Install ROCm Finance libraries. See the following resources to get started:
+To learn about ROCm Docker images, see :doc:`rocm-install-on-linux:how-to/docker`.
 
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/install/install.html>`__
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__
+Install ROCm Finance libraries
+==============================
+
+Get started using ROCm for the finance domain. To install ROCm Finance libraries,
+see the following resources. For compatibility information, see the :doc:`/about/compatibility-matrix`.
+
+* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
+* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__

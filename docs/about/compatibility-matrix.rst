@@ -1,3 +1,7 @@
+.. meta::
+   :description: AMD ROCm Finance Expansion SDK compatibility information
+   :keywords: amd, rocm, finance, gpu, instinct, sdk, system, requirements, compatibility, support, version, upstream, library, env
+
 *********************************
 ROCm Finance compatibility matrix
 *********************************
@@ -26,6 +30,5 @@ Use this table to view ROCm Finance compatibility and system compatibility acros
        * 3.10
      - MI300X (gfx942)
      -
-       * XGBoost 3.1.1
        * LightGBM 4.6.0.99
        * ThunderGBM 0.3.16

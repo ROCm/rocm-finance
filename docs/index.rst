@@ -1,78 +1,74 @@
 .. meta::
-   :description: ROCm for the finance domain
-   :keywords: amd, rocm, finance, gpu, instinct, sdk
+   :description: AMD ROCm Finance Expansion SDK
+   :keywords: amd, rocm, finance, gpu, instinct, sdk, expansion, toolkit, library, fintech, gbm
 
-***********************
-AMD ROCm Finance Domain
-***********************
+****************
+AMD ROCm Finance
+****************
 
-The AMD ROCm platform is an open-source GPGPU computing ecosystem designed for
-high-performance workloads. Within the ROCm ecosystem, the AMD ROCm Finance
-Domain expansion SDK includes official, production‑ready support for three
-industry‑leading Gradient Boosting Machine (GBM) libraries: XGBoost, LightGBM,
-and ThunderGBM.
+The AMD ROCm software stack is an open-source high performance GPU computing
+ecosystem designed for high-performance workloads. Within the ROCm ecosystem,
+the AMD ROCm Finance expansion toolkit includes official, production‑ready
+support for three industry‑leading Gradient Boosting Machine (GBM) libraries:
+LightGBM and ThunderGBM.
 
 .. list-table::
    :header-rows: 1
+   :stub-columns: 1
 
-   * - Feature
-     - XGBoost
+   * -
      - LightGBM
      - ThunderGBM
 
    * - Tree growth strategy
-     - Level-wise
      - Leaf-wise
      - Level-wise (GPU)
 
    * - Categorical feature handling
-     - Manual encoding
      - Manual + binning
      - Manual encoding
 
    * - Overfitting control
-     - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
 
    * - Best for
-     - General use
      - Large datasets
      - GPU-intensive tasks
 
-   * - Primary finance use case
-     - Credit-risk scoring, fraud detection, algorithmic trading
-     - Portfolio optimization, time-series forecasting, market-microstructure analysis
-     - High-frequency trading, large-scale scenario simulations
+   * - Finance use cases
+     -
+       * Portfolio optimization
+       * Time-series forecasting
+       * Market-microstructure analysis
+     -
+       * High-frequency trading
+       * Large-scale scenario simulations
 
-These libraries are fully accelerated on AMD GPUs via ROCm libraries,
-leveraging the latest AMD GPU architectures. The integration includes optimized
-kernels, memory‑management enhancements, and seamless multi‑GPU
-scaling—delivering up to dramatic performance boosts over CPU‑only baselines in
-typical finance workloads.
+These libraries are accelerated on AMD GPUs through optimized ROCm libraries
+leveraging the latest AMD GPU architectures. ROCm enablement of these libraries
+introduces optimized kernels, memory‑management enhancements, and seamless
+multi‑GPU scaling, delivering performance gains over CPU-only baselines in
+intensive workloads.
 
 The ROCm Finance source code is hosted on GitHub at
-`<https://github.com/ROCm/ROCm-Finance>`__.
+`<https://github.com/ROCm-Finance/ROCm-Finance>`__.
 
 ROCm Finance documentation is organized into the following categories:
 
 .. grid:: 2
    :gutter: 3
 
-   .. grid-item-card:: Installation
+   .. grid-item-card:: Install
 
+      * :doc:`/install/prerequisites`
       * :doc:`/install/install`
 
    .. grid-item-card:: Components
 
-      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/>`__
       * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/>`__
       * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/>`__
 
-   .. grid-item-card:: Related content
+   .. grid-item-card:: Tutorial
 
-      * `Instinct docs <https://instinct.docs.amd.com/latest/>`__
-
-   .. grid-item-card:: About
-
-      * :doc:`License </about/license>`
+      * `Examples <https://github.com/AMD-AIOSS/rocm-finance/tree/main/examples>`__

@@ -23,18 +23,14 @@ subtrees:
         title: Install ROCm Finance
   - caption: Components
     entries:
-      - url: https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/
-        title: XGBoost
       - url: https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/
         title: LightGBM
       - url: https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/
         title: ThunderGBM
-  - caption: Related content
+  - caption: Tutorial
     entries:
-      - url: https://rocm.docs.amd.com/latest/
-        title: ROCm documentation
-      - url: https://instinct.docs.amd.com/latest/
-        title: Instinct documentation
+      - url: https://github.com/AMD-AIOSS/rocm-finance/tree/main/examples
+        title: Examples
   - caption: About
     entries:
       - file: about/license.rst

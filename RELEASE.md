@@ -1,15 +1,20 @@
+---
+myst:
+  html_meta:
+    "description lang=en": "ROCm Finance SDK 25.11 Release Notes"
+    "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
+---
+
 # ROCm Finance 25.11 release notes
 
 This is the initial release of the AMD ROCm Finance Domain SDK, providing
 production-ready support for GPU-accelerated Gradient Boosting Machine (GBM)
-libraries on ROCm 6.4 and 7.0.
+libraries on ROCm 7.0 and 6.4.
 
 ## Release highlights
 
-This release introduces three ROCm-enabled libraries.
+This release introduces two ROCm-enabled libraries.
 
-- **XGBoost** -- Fully optimized for AMD GPUs with support for credit-risk
-  scoring, fraud detection, and algorithmic trading workloads.
 - **LightGBM** -- GPU-accelerated implementation for portfolio optimization,
   time-series forecasting, and market microstructure analysis.
 - **ThunderGBM** -- Native GPU execution for high-frequency trading and
@@ -17,21 +22,10 @@ This release introduces three ROCm-enabled libraries.
 
 See [ROCm Finance components](#rocm-finance-components) for details.
 
-### High-level features
-
-- Full GPU acceleration on AMD Instinct MI300X (CDNA 3 architecture)
-- Optimized kernels and memory management enhancements
-- Seamless multi-GPU scaling support
-- Comprehensive installation documentation for all three ROCm-enabled GBM libraries
-- Example implementations for financial use cases
-
-
 ## Supported platforms
 
-- **Hardware** -- AMD Instinct MI300X GPUs (gfx942)
-- **Linux distribution** -- Ubuntu 24.04 and 22.04
-- **ROCm version** -- 7.0 and 6.4
-- **Python version** -- 3.12 and 3.10
+To learn about hardware and software environment requirements, see the
+{doc}`/about/compatibility-matrix` and the {doc}`/install/prerequisites`.
 
 ## ROCm Finance components
 
@@ -41,10 +35,6 @@ See [ROCm Finance components](#rocm-finance-components) for details.
 * - Component
   - Version
   - Source
-
-* - [XGBoost](https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/)
-  - 3.11
-  - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/xgboost>`
 
 * - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/)
   - 4.6.0.99
