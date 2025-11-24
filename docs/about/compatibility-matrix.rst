@@ -6,7 +6,8 @@
 ROCm Finance compatibility matrix
 *********************************
 
-Use this table to view ROCm Finance compatibility and system compatibility across releases.
+This table provides system and library compatibility information for the ROCm
+Finance libraries. 
 
 .. list-table::
    :header-rows: 1
@@ -23,8 +24,8 @@ Use this table to view ROCm Finance compatibility and system compatibility acros
        * Ubuntu 24.04
        * Ubuntu 22.04
      - 
-       * 7.0
-       * 6.4
+       * 7.0.2
+       * 6.4.4
      - 
        * 3.12
        * 3.10

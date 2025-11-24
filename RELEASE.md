@@ -13,7 +13,7 @@ libraries on ROCm 7.0 and 6.4.
 
 ## Release highlights
 
-This release introduces two ROCm-enabled libraries.
+This release introduces two libraries with ROCm support.
 
 - **LightGBM** -- GPU-accelerated implementation for portfolio optimization,
   time-series forecasting, and market microstructure analysis.

@@ -8,9 +8,9 @@ AMD ROCm Finance
 
 The AMD ROCm software stack is an open-source high performance GPU computing
 ecosystem designed for high-performance workloads. Within the ROCm ecosystem,
-the AMD ROCm Finance expansion toolkit includes official, production‑ready
-support for three industry‑leading Gradient Boosting Machine (GBM) libraries:
-LightGBM and ThunderGBM.
+the AMD ROCm Finance expansion toolkit includes production‑ready support for
+industry‑leading Gradient Boosting Machine (GBM) libraries: LightGBM and
+ThunderGBM.
 
 .. list-table::
    :header-rows: 1
@@ -19,6 +19,19 @@ LightGBM and ThunderGBM.
    * -
      - LightGBM
      - ThunderGBM
+
+   * - Finance use cases
+     -
+       * Portfolio optimization
+       * Time-series forecasting
+       * Market-microstructure analysis
+     -
+       * High-frequency trading
+       * Large-scale scenario simulations
+
+   * - Best for
+     - Large datasets
+     - GPU-intensive tasks
 
    * - Tree growth strategy
      - Leaf-wise
@@ -31,19 +44,6 @@ LightGBM and ThunderGBM.
    * - Overfitting control
      - L1/L2 + sampling
      - Regularization
-
-   * - Best for
-     - Large datasets
-     - GPU-intensive tasks
-
-   * - Finance use cases
-     -
-       * Portfolio optimization
-       * Time-series forecasting
-       * Market-microstructure analysis
-     -
-       * High-frequency trading
-       * Large-scale scenario simulations
 
 These libraries are accelerated on AMD GPUs through optimized ROCm libraries
 leveraging the latest AMD GPU architectures. ROCm enablement of these libraries
