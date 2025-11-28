@@ -15,10 +15,13 @@ libraries on ROCm 7.0 and 6.4.
 
 This release introduces two libraries with ROCm support.
 
-- **LightGBM** -- GPU-accelerated implementation for portfolio optimization,
-  time-series forecasting, and market microstructure analysis.
-- **ThunderGBM** -- Native GPU execution for high-frequency trading and
-  large-scale scenario simulations.
+- **LightGBM** is an open-source gradient boosting framework developed by
+  Microsoft specializing in tree-based learning algorithms for supervised
+  machine learning tasks like classification, regression, and ranking.
+- **ThunderGBM** is an open-source library developed by Xtra-Computing that
+  accelerates Gradient Boosted Decision Trees (GBDTs) and Random Forests
+  using GPUs, enabling high-performance machine learning for large-scale
+  datasets.
 
 See [ROCm Finance components](#rocm-finance-components) for details.
 
