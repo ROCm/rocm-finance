@@ -15,7 +15,7 @@ ROOT_DIR = DOCS_DIR.parent
 
 sys.path.append(str(DOCS_DIR / "_extension"))
 
-project = "ROCm Finance Domain"
+project = "ROCm-Finance"
 project_path = str(DOCS_DIR).replace("\\", "/")
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) %Y Advanced Micro Devices, Inc. All rights reserved."
@@ -36,7 +36,7 @@ html_theme = "rocm_docs_theme"
 html_theme_options = {
     "flavor": "rocm-finance",
 }
-html_title = f"ROCm Finance {RELEASE_VERSION} documentation"
+html_title = f"ROCm-Finance {RELEASE_VERSION}"
 html_context = {}
 if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True

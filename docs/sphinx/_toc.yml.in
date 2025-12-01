@@ -20,7 +20,7 @@ subtrees:
       - file: install/prerequisites.rst
         title: Prerequisites
       - file: install/install.rst
-        title: Install ROCm Finance
+        title: Install ROCm-Finance
   - caption: Components
     entries:
       - url: https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/

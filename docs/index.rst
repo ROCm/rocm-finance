@@ -1,16 +1,16 @@
 .. meta::
-   :description: AMD ROCm Finance Expansion SDK
-   :keywords: amd, rocm, finance, gpu, instinct, sdk, expansion, toolkit, library, fintech, gbm
+   :description: AMD ROCm-Finance Toolkit
+   :keywords: amd, rocm, finance, gpu, instinct, sdk, toolkit, library, fintech, gbm
 
-****************
-AMD ROCm Finance
-****************
+******************************
+AMD ROCm Finance documentation
+******************************
 
-The AMD ROCm software stack is an open-source high performance GPU computing
-ecosystem designed for high-performance workloads. Within the ROCm ecosystem,
-the AMD ROCm Finance expansion toolkit includes production‑ready support for
-industry‑leading Gradient Boosting Machine (GBM) libraries: LightGBM and
-ThunderGBM.
+Within the ROCm ecosystem, the AMD ROCm Finance toolkit (ROCm-Finance) includes
+production‑ready support for industry‑leading Gradient Boosting Machine (GBM)
+libraries for high-performance finance use cases:
+`<https://github.com/microsoft/LightGBM>`__ and
+`<https://github.com/Xtra-Computing/ThunderGBM>`__.
 
 .. list-table::
    :header-rows: 1
@@ -45,16 +45,16 @@ ThunderGBM.
      - L1/L2 + sampling
      - Regularization
 
-These libraries are accelerated on AMD GPUs through optimized ROCm libraries
-leveraging the latest AMD GPU architectures. ROCm enablement of these libraries
-introduces optimized kernels, memory‑management enhancements, and seamless
-multi‑GPU scaling, delivering performance gains over CPU-only baselines in
-intensive workloads.
+These libraries are accelerated on AMD Instinct GPUs through optimized ROCm
+libraries, leveraging the latest AMD GPU architectures. ROCm enablement of
+these libraries introduces optimized kernels, memory‑management enhancements,
+and seamless multi‑GPU scaling, delivering performance gains over CPU-only
+baselines in intensive workloads.
 
-The ROCm Finance source code is hosted on GitHub at
-`<https://github.com/ROCm-Finance/ROCm-Finance>`__.
+The ROCm-Finance source code is hosted on GitHub at
+`<https://github.com/ROCm/ROCm-Finance>`__.
 
-ROCm Finance documentation is organized into the following categories:
+ROCm-Finance documentation is organized into the following categories:
 
 .. grid:: 2
    :gutter: 3

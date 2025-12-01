@@ -1,22 +1,22 @@
 .. meta::
-   :description: AMD ROCm Finance Expansion SDK compatibility information
+   :description: AMD ROCm-Finance compatibility information
    :keywords: amd, rocm, finance, gpu, instinct, sdk, system, requirements, compatibility, support, version, upstream, library, env
 
 *********************************
-ROCm Finance compatibility matrix
+ROCm-Finance compatibility matrix
 *********************************
 
-This table provides system and library compatibility information for the ROCm
-Finance libraries. 
+This table provides system and library compatibility information for the
+ROCm-Finance libraries. 
 
 .. list-table::
    :header-rows: 1
 
-   * - ROCm Finance version
+   * - ROCm-Finance version
      - Operating system
      - ROCm version
      - Python version
-     - AMD Instinct GPU
+     - AMD Instinct™ GPU
      - Components
 
    * - 25.11
