@@ -5,9 +5,9 @@ myst:
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
-# ROCm-Finance 25.11 release notes
+# AMD ROCm Finance 25.11 release notes
 
-This is the initial release of the AMD ROCm-Finance Domain SDK, providing
+This is the initial release of the AMD ROCm Finance toolkit (ROCm-Finance), providing
 production-ready support for GPU-accelerated Gradient Boosting Machine (GBM)
 libraries on ROCm 7.0 and 6.4.
 

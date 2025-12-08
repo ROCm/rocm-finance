@@ -16,7 +16,7 @@ ROCm-Finance libraries.
      - Operating system
      - ROCm version
      - Python version
-     - AMD Instinct™ GPU
+     - AMD Instinct GPU
      - Components
 
    * - 25.11
