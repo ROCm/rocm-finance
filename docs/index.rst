@@ -66,8 +66,8 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/>`__
-      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/>`__
 
    .. grid-item-card:: Tutorial
 

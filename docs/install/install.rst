@@ -176,5 +176,5 @@ Install ROCm-Finance libraries
 Get started using ROCm for the finance domain. To install ROCm-Finance libraries,
 see the following resources. For compatibility information, see the :doc:`/about/compatibility-matrix`.
 
-* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
-* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__
+* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
+* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__

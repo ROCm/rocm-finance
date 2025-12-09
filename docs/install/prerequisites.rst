@@ -14,7 +14,7 @@ hardware and software prerequisites outlined here.
 Supported hardware configurations
 =================================
 
-ROCm-Finance supports AMD Instinct™ MI300X GPUs.
+ROCm-Finance supports AMD Instinct MI300X GPUs.
 
 Supported software configurations
 =================================
@@ -49,5 +49,5 @@ to install ROCm-Finance.
 
 2. Install ROCm-Finance libraries. See the following resources to get started:
 
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__
+   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
+   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__
