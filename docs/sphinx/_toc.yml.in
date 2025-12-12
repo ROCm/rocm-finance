@@ -23,13 +23,13 @@ subtrees:
         title: Install ROCm-Finance
   - caption: Components
     entries:
-      - url: https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/
+      - url: https://rocm.docs.amd.com/projects/lightgbm/en/${branch}/
         title: LightGBM
-      - url: https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/
+      - url: https://rocm.docs.amd.com/projects/thundergbm/en/${branch}/
         title: ThunderGBM
   - caption: Tutorial
     entries:
-      - url: https://github.com/AMD-AIOSS/rocm-finance/tree/main/examples
+      - url: https://github.com/ROCm/rocm-finance/tree/${branch}/examples
         title: Examples
   - caption: About
     entries:

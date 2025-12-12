@@ -12,4 +12,4 @@ docBin/
 _doxygen/
 _readthedocs/
 __pycache__/
-about/release-notes.md
+docs/about/release-notes.md
