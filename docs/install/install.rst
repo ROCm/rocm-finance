@@ -31,56 +31,24 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
       .. tab-item:: ROCm 7.0.2
          :sync: rocm7
 
-         .. tab-set::
+         .. code-block:: shell
 
-            .. tab-item:: Ubuntu 24.04
-               :sync: ubuntu-24
+            docker pull rocm/dev-ubuntu-24.04:7.0.2-complete
 
-               .. code-block:: shell
-
-                  docker pull rocm/dev-ubuntu-24.04:7.0.2-complete
-
-               See `rocm/dev-ubuntu-24.04:7.0.2-complete
-               <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/7.0.2-complete/images/sha256-1f016cc06d83c615872d7464a9eeaa812b86d8e0512933a3be27bf3980ee5e06>`__
-               on Docker Hub.
-
-            .. tab-item:: Ubuntu 22.04
-               :sync: ubuntu-22
-
-               .. code-block:: shell
-
-                  docker pull rocm/dev-ubuntu-22.04:7.0.2-complete
-
-               See `rocm/dev-ubuntu-22.04:7.0.2-complete
-               <https://hub.docker.com/layers/rocm/dev-ubuntu-22.04/7.0.2-complete/images/sha256-a60cffc2d079dbdc7a54948766e21793abdfeaa2ea95af60214f975a1ce51d06>`__
-               on Docker Hub.
+         See `rocm/dev-ubuntu-24.04:7.0.2-complete
+         <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/7.0.2-complete/images/sha256-1f016cc06d83c615872d7464a9eeaa812b86d8e0512933a3be27bf3980ee5e06>`__
+         on Docker Hub.
 
       .. tab-item:: ROCm 6.4.4
          :sync: rocm6
 
-         .. tab-set::
+         .. code-block:: shell
 
-            .. tab-item:: Ubuntu 24.04
-               :sync: ubuntu-24
+            docker pull rocm/dev-ubuntu-24.04:6.4.4-complete
 
-               .. code-block:: shell
-
-                  docker pull rocm/dev-ubuntu-24.04:6.4.4-complete
-
-               See `rocm/dev-ubuntu-24.04:6.4.4-complete
-               <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/6.4.4-complete/images/sha256-31418ac10a3769a71eaef330c07280d1d999d7074621339b8f93c484c35f6078>`__
-               on Docker Hub.
-
-            .. tab-item:: Ubuntu 22.04
-               :sync: ubuntu-22
-
-               .. code-block:: shell
-
-                  docker pull rocm/dev-ubuntu-22.04:6.4.4-complete
-
-               See `rocm/dev-ubuntu-22.04:6.4.4-complete
-               <https://hub.docker.com/layers/rocm/dev-ubuntu-22.04/6.4.4-complete/images/sha256-bdaa057ff7d6be321ada8d451aaab92777656557fa67985f27f2c98bd29c7a36>`__
-               on Docker Hub.
+         See `rocm/dev-ubuntu-24.04:6.4.4-complete
+         <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/6.4.4-complete/images/sha256-31418ac10a3769a71eaef330c07280d1d999d7074621339b8f93c484c35f6078>`__
+         on Docker Hub.
 
 2. Launch the Docker container.
 
@@ -89,84 +57,38 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
       .. tab-item:: ROCm 7.0.2
          :sync: rocm7
 
-         .. tab-set::
+         .. code-block:: shell
 
-            .. tab-item:: Ubuntu 24.04
-               :sync: ubuntu-24
-
-               .. code-block:: shell
-
-                  docker run -it \
-                      --cap-add=SYS_PTRACE \
-                      --ipc=host \
-                      --privileged=true \
-                      --shm-size=128GB \
-                      --network=host \
-                      --device=/dev/kfd \
-                      --device=/dev/dri \
-                      --group-add video \
-                      -v $HOME:$HOME \
-                      --name rocm7 \
-                      rocm/dev-ubuntu-24.04:7.0.2-complete
-
-            .. tab-item:: Ubuntu 22.04
-               :sync: ubuntu-22
-
-               .. code-block:: shell
-
-                  docker run -it \
-                      --cap-add=SYS_PTRACE \
-                      --ipc=host \
-                      --privileged=true \
-                      --shm-size=128GB \
-                      --network=host \
-                      --device=/dev/kfd \
-                      --device=/dev/dri \
-                      --group-add video \
-                      -v $HOME:$HOME \
-                      --name rocm7 \
-                      rocm/dev-ubuntu-22.04:7.0.2-complete
+            docker run -it \
+                --cap-add=SYS_PTRACE \
+                --ipc=host \
+                --privileged=true \
+                --shm-size=128GB \
+                --network=host \
+                --device=/dev/kfd \
+                --device=/dev/dri \
+                --group-add video \
+                -v $HOME:$HOME \
+                --name rocm7 \
+                rocm/dev-ubuntu-24.04:7.0.2-complete
 
       .. tab-item:: ROCm 6.4.4
          :sync: rocm6
 
-         .. tab-set::
+         .. code-block:: shell
 
-            .. tab-item:: Ubuntu 24.04
-               :sync: ubuntu-24
-
-               .. code-block:: shell
-
-                  docker run -it \
-                      --cap-add=SYS_PTRACE \
-                      --ipc=host \
-                      --privileged=true \
-                      --shm-size=128GB \
-                      --network=host \
-                      --device=/dev/kfd \
-                      --device=/dev/dri \
-                      --group-add video \
-                      -v $HOME:$HOME \
-                      --name rocm6 \
-                      rocm/dev-ubuntu-24.04:6.4.4-complete
-
-            .. tab-item:: Ubuntu 22.04
-               :sync: ubuntu-22
-
-               .. code-block:: shell
-
-                  docker run -it \
-                      --cap-add=SYS_PTRACE \
-                      --ipc=host \
-                      --privileged=true \
-                      --shm-size=128GB \
-                      --network=host \
-                      --device=/dev/kfd \
-                      --device=/dev/dri \
-                      --group-add video \
-                      -v $HOME:$HOME \
-                      --name rocm6 \
-                      rocm/dev-ubuntu-22.04:6.4.4-complete
+            docker run -it \
+                --cap-add=SYS_PTRACE \
+                --ipc=host \
+                --privileged=true \
+                --shm-size=128GB \
+                --network=host \
+                --device=/dev/kfd \
+                --device=/dev/dri \
+                --group-add video \
+                -v $HOME:$HOME \
+                --name rocm6 \
+                rocm/dev-ubuntu-24.04:6.4.4-complete
 
 To learn about ROCm Docker images, see :doc:`rocm-install-on-linux:how-to/docker`.
 

@@ -34,7 +34,7 @@ the ROCm-Finance libraries.
      - 3.12
 
    * - 6.4.4
-     - 22.04
+     - 24.04
      - 3.10
 
 Getting started
