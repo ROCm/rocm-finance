@@ -6,6 +6,7 @@ The AMD ROCm™ platform is an open-source GPU computing ecosystem designed for 
 |:----------:|:------------------------:|:-------------------------------------------------------------------------------:|
 | LightGBM   | 4.6.0.99                 | Portfolio optimization, time‑series forecasting, market‑microstructure analysis |
 | ThunderGBM | 0.3.16                   | High‑frequency trading, large‑scale scenario simulations                        |
+| XGBoost    | 3.1.1                    | Prediction and feature parallelization, Loan default scoring                    |  
 
 These libraries are now fully accelerated on AMD GPUs via ROCm 6.4 and 7.0, leveraging the latest CDNA 3 and Instinct™ MI300X hardware. The integration includes optimized kernels, memory‑management enhancements, and seamless multi‑GPU scaling—delivering up to XX speed‑up over CPU‑only baselines in typical finance workloads.
 
