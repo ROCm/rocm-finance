@@ -38,5 +38,7 @@ ThunderGBM is optimized for GPU-native execution with atomic operations and appr
 
 Refer to the individual component pages for documentation on system requirements, installation instructions and examples.
 
+- [XGBoost](https://github.com/rocm/xgboost)
 - [LightGBM](https://github.com/rocm/lightgbm)
 - [ThunderGBM](https://github.com/rocm/thundergbm)
+
