@@ -12,6 +12,10 @@ These libraries are now fully accelerated on AMD GPUs via ROCm 6.4 and 7.0, le
 
 ## Overview
 
+### XGBoost
+
+ XGBoost excels in financial risk prediction due to its level-wise tree growth for balanced, accurate models, strong regularization (L1/L2) to handle noisy finance data (e.g., outliers in income/credit scores), and built-in missing value handling. It's highly tunable for precision in high-stakes tasks like loan default scoring, where interpretability (e.g., feature importance) aids regulatory compliance. GPU acceleration provides solid speedups (3-10x) on large feature sets by parallelizing splits, though it's memory-hungry for very deep trees. Nuances: Slower than peers on ultra-large data without GPU; best for datasets with 100+ features where accuracy trumps raw speed.
+
 ### LightGBM 
 
 LightGBM shines in finance for its histogram-based splitting and leaf-wise tree growth, enabling faster convergence on large, imbalanced datasets with many categorical features (e.g., employment types, verification status—no need for one-hot encoding). It has a low memory footprint and handles sparsity well, ideal for credit datasets. GPU support is lightweight, offering 2-5x speedups via efficient histogram computation. Nuances: Prone to overfitting without min_data_in_leaf; excels where categorical features (>10) dominate, reducing preprocessing time in production pipelines. 
@@ -22,12 +26,12 @@ ThunderGBM is optimized for GPU-native execution with atomic operations and appr
 
 ### Feature Comparison Table
 
-| Feature                      | LightGBM         | ThunderGBM       |
-|:----------------------------:|:----------------:|:----------------:|
-| Tree Growth Strategy         | Leaf-wise        | Level-wise (GPU) |
-| Categorical Feature Handling | Manual + binning | Manual encoding  |
-| Overfitting Control          | L1/L2 + sampling | Regularization   |
-| Best For                     | Large datasets   | GPU-heavy tasks  |
+| Feature                      |   XGboost        | LightGBM          | ThunderGBM      |
+|:----------------------------:|:----------------:|:----------------:|:----------------:|
+| Tree Growth Strategy         |   Level-wise     |Leaf-wise        | Level-wise (GPU) |
+| Categorical Feature Handling | Manual encoding |Manual + binning | Manual encoding  |
+| Overfitting Control          | L1/L2 + early stop|L1/L2 + sampling | Regularization   |
+| Best For                     |  General use     |Large datasets   | GPU-heavy tasks  |
 
 
 ## Documentation
