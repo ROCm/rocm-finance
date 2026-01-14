@@ -9,7 +9,7 @@ import shutil
 import sys
 from pathlib import Path
 
-RELEASE_VERSION = "25.11"
+RELEASE_VERSION = "26.01"
 DOCS_DIR = Path(__file__).parent.resolve()
 ROOT_DIR = DOCS_DIR.parent
 
