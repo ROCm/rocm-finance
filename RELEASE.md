@@ -39,11 +39,11 @@ To learn about hardware and software environment requirements, see the
   - Version
   - Source
 
-* - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/latest/)
+* - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/)
   - 4.6.0.99
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/lightgbm>`
 
-* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/latest/)
+* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/)
   - 0.3.16
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
 
