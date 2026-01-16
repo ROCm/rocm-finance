@@ -31,7 +31,7 @@ subtrees:
         title: ThunderGBM
   - caption: Tutorial
     entries:
-      - url: https://github.com/ROCm/rocm-finance/tree/release/25.11/examples
+      - url: https://github.com/ROCm/rocm-finance/tree/release/26.01/examples
         title: Examples
   - caption: About
     entries:

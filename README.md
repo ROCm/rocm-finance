@@ -4,10 +4,9 @@ The AMD ROCm platform is an open-source GPU computing ecosystem designed for hig
 
 | Library    | Current Upstream Version | Primary Finance Use‑Cases                                                       |
 |:----------:|:------------------------:|:-------------------------------------------------------------------------------:|
-| XGBoost    | 3.1.1                    | Credit-risk scoring, fraud detection, algorithmic trading                       |
+| XGBoost    | 3.1.1                    | Prediction and feature parallelization, loan default scoring                    |
 | LightGBM   | 4.6.0.99                 | Portfolio optimization, time‑series forecasting, market‑microstructure analysis |
 | ThunderGBM | 0.3.16                   | High‑frequency trading, large‑scale scenario simulations                        |
-| XGBoost    | 3.1.1                    | Prediction and feature parallelization, Loan default scoring                    |  
 
 These libraries are now fully accelerated on AMD GPUs via ROCm 6.4 and 7.0, leveraging the latest CDNA 3 and Instinct™ MI300X hardware. The integration includes optimized kernels, memory‑management enhancements, and seamless multi‑GPU scaling—delivering up to speed‑ups over CPU‑only baselines in typical finance workloads.
 
@@ -38,7 +37,7 @@ ThunderGBM is optimized for GPU-native execution with atomic operations and appr
 
 Refer to the individual component pages for documentation on system requirements, installation instructions and examples.
 
-- [XGBoost](https://github.com/rocm/xgboost)
-- [LightGBM](https://github.com/rocm/lightgbm)
-- [ThunderGBM](https://github.com/rocm/thundergbm)
+- [XGBoost](https://rocm.docs.amd.com/projects/xgboost/en/latest/)
+- [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/latest/)
+- [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/latest/)
 

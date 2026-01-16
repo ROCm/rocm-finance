@@ -19,7 +19,21 @@ ROCm-Finance libraries.
      - AMD Instinct GPU
      - Components
 
-   * - 25.11
+   * - 26.01
+     - Ubuntu 24.04
+     - 
+       * 7.0.2
+       * 6.4.4
+     - 
+       * 3.12
+       * 3.10
+     - MI300X (gfx942)
+     -
+       * XGBoost 3.1.1
+       * LightGBM 4.6.0.99
+       * ThunderGBM 0.3.16
+
+   * - `25.11 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-25.11/>`__
      - Ubuntu 24.04
      - 
        * 7.0.2
