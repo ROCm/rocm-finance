@@ -34,7 +34,7 @@ the ROCm-Finance libraries.
      - 3.12
 
    * - 6.4.4
-     - 22.04
+     - 24.04
      - 3.10
 
 Getting started
@@ -49,5 +49,6 @@ to install ROCm-Finance.
 
 2. Install ROCm-Finance libraries. See the following resources to get started:
 
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
    * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
    * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__

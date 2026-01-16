@@ -1,29 +1,27 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "ROCm-Finance 25.11 Release Notes"
+    "description lang=en": "ROCm-Finance 26.01 Release Notes"
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
-# AMD ROCm Finance 25.11 release notes
+# AMD ROCm Finance 26.01 release notes
 
-This is the initial release of the AMD ROCm Finance toolkit (ROCm-Finance), providing
-production-ready support for GPU-accelerated Gradient Boosting Machine (GBM)
-libraries on ROCm 7.0 and 6.4.
+This release introduces the popular XGBoost library to the ROCm-Finance
+toolkit, enhancing machine learning capabilites for financial workloads.
 
 ## Release highlights
 
-This release introduces two libraries with ROCm support.
+XGBoost is now fully accelerated on AMD GPUs via ROCm 6.4 and 7.0, leveraging
+the latest CDNA 3 architecture and Instinct MI300X GPUs. The integration
+features optimized kernels, improved memory management, and seamless multi-GPU
+scaling.
 
-- **LightGBM** is an open-source gradient boosting framework developed by
-  Microsoft specializing in tree-based learning algorithms for supervised
-  machine learning tasks like classification, regression, and ranking.
-- **ThunderGBM** is an open-source library developed by Xtra-Computing that
-  accelerates Gradient Boosted Decision Trees (GBDTs) and Random Forests
-  using GPUs, enabling high-performance machine learning for large-scale
-  datasets.
+Key benefits of this integration include:
 
-See [ROCm-Finance components](#rocm-finance-components) for details.
+*   **Hardware acceleration:** Delivers significant speed-ups over CPU-only baselines in typical finance workloads by parallelizing split-finding on the GPU.
+*   **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
+*   **Compliance and precision:** Maintains the interpretability (L1/L2 regularization) and missing value handling inherent to XGBoost while increasing throughput.
 
 ## Supported platforms
 
@@ -38,6 +36,10 @@ To learn about hardware and software environment requirements, see the
 * - Component
   - Version
   - Source
+
+* - [XGBoost](https://rocm.docs.amd.com/projects/xgboost/en/latest/)
+  - 3.1.1
+  - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/xgboost>`
 
 * - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/latest/)
   - 4.6.0.99

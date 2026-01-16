@@ -9,6 +9,7 @@ AMD ROCm Finance documentation
 Within the ROCm ecosystem, the AMD ROCm Finance toolkit (ROCm-Finance) includes
 production‑ready support for industry‑leading Gradient Boosting Machine (GBM)
 libraries for high-performance finance use cases:
+`<https://github.com/dmlc/XGBoost/>`__,
 `<https://github.com/microsoft/LightGBM>`__ and
 `<https://github.com/Xtra-Computing/ThunderGBM>`__.
 
@@ -17,10 +18,15 @@ libraries for high-performance finance use cases:
    :stub-columns: 1
 
    * -
-     - LightGBM
+     - XGBoost
      - ThunderGBM
+     - LightGBM
 
    * - Finance use cases
+     -
+       * Credit risk scoring
+       * Fraud detection
+       * Algorithmic trading
      -
        * Portfolio optimization
        * Time-series forecasting
@@ -30,18 +36,22 @@ libraries for high-performance finance use cases:
        * Large-scale scenario simulations
 
    * - Best for
+     - General use
      - Large datasets
      - GPU-intensive tasks
 
    * - Tree growth strategy
+     - Level-wise
      - Leaf-wise
      - Level-wise (GPU)
 
    * - Categorical feature handling
+     - Manual encoding
      - Manual + binning
      - Manual encoding
 
    * - Overfitting control
+     - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
 
@@ -66,6 +76,7 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/>`__
       * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/>`__
       * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/>`__
 
