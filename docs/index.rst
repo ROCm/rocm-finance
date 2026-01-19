@@ -17,10 +17,16 @@ libraries for high-performance finance use cases:
    :stub-columns: 1
 
    * -
+     - XGBoost
+     - ThunderGBM
      - LightGBM
      - ThunderGBM
 
    * - Finance use cases
+     -
+       * Credit risk scoring
+       * Fraud detection
+       * Algorithmic trading
      -
        * Portfolio optimization
        * Time-series forecasting
@@ -30,18 +36,22 @@ libraries for high-performance finance use cases:
        * Large-scale scenario simulations
 
    * - Best for
+     - General use
      - Large datasets
      - GPU-intensive tasks
 
    * - Tree growth strategy
+     - Level-wise
      - Leaf-wise
      - Level-wise (GPU)
 
    * - Categorical feature handling
+     - Manual encoding
      - Manual + binning
      - Manual encoding
 
    * - Overfitting control
+     - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
 
@@ -66,9 +76,9 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-
-      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/>`__
-      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/>`__
 
    .. grid-item-card:: Tutorial
 
