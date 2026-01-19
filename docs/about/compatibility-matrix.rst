@@ -24,9 +24,7 @@ ROCm-Finance libraries.
      - 
        * 7.0.2
        * 6.4.4
-     - 
-       * 3.12
-       * 3.10
+     - 3.12
      - MI300X (gfx942)
      -
        * XGBoost 3.1.1
@@ -38,9 +36,7 @@ ROCm-Finance libraries.
      - 
        * 7.0.2
        * 6.4.4
-     - 
-       * 3.12
-       * 3.10
+     - 3.12
      - MI300X (gfx942)
      -
        * LightGBM 4.6.0.99
