@@ -12,16 +12,16 @@ toolkit, enhancing machine learning capabilites for financial workloads.
 
 ## Release highlights
 
-XGBoost is now fully accelerated on AMD GPUs via ROCm 6.4 and 7.0, leveraging
-the latest CDNA 3 architecture and Instinct MI300X GPUs. The integration
-features optimized kernels, improved memory management, and seamless multi-GPU
-scaling.
+XGBoost is now fully accelerated on AMD Instinct MI300X GPUs via ROCm 6.4.4 and
+7.0.2, leveraging the CDNA 3 architecture and ROCm optimizations. The
+integration features optimized kernels, improved memory management, and
+seamless multi-GPU scaling.
 
 Key benefits of this integration include:
 
-*   **Hardware acceleration:** Delivers significant speed-ups over CPU-only baselines in typical finance workloads by parallelizing split-finding on the GPU.
-*   **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
-*   **Compliance and precision:** Maintains the interpretability (L1/L2 regularization) and missing value handling inherent to XGBoost while increasing throughput.
+* **Hardware acceleration:** Delivers significant speed-ups over CPU-only baselines in typical finance workloads by parallelizing split-finding on the GPU.
+* **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
+* **Compliance and precision:** Maintains interpretability (L1/L2 regularization) and missing value handling inherent to XGBoost while increasing throughput.
 
 ## Supported platforms
 
@@ -45,7 +45,7 @@ To learn about hardware and software environment requirements, see the
   - 4.6.0.99
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/lightgbm>`
 
-* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/latest/)
+* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/)
   - 0.3.16
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
 

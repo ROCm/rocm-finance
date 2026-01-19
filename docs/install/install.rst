@@ -95,8 +95,8 @@ To learn about ROCm Docker images, see :doc:`rocm-install-on-linux:how-to/docker
 Install ROCm-Finance libraries
 ==============================
 
-Get started using ROCm for the finance domain. To install ROCm-Finance libraries,
-see the following resources. For compatibility information, see the :doc:`/about/compatibility-matrix`.
+To install ROCm-Finance libraries, see the following resources. For
+compatibility information, see the :doc:`/about/compatibility-matrix`.
 
 * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
 * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__

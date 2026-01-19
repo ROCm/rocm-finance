@@ -19,8 +19,8 @@ ROCm-Finance supports AMD Instinct MI300X GPUs.
 Supported software configurations
 =================================
 
-The following table lists ROCm, Ubuntu, and Python versions supported by all of
-the ROCm-Finance libraries.
+The following table lists the supported ROCm, Ubuntu, and Python versions for
+ROCm-Finance libraries.
 
 .. list-table::
    :header-rows: 1
@@ -29,13 +29,9 @@ the ROCm-Finance libraries.
      - Ubuntu version
      - Python version
 
-   * - 7.0.2
+   * - 7.0.2, 6.4.4
      - 24.04
      - 3.12
-
-   * - 6.4.4
-     - 24.04
-     - 3.10
 
 Getting started
 ===============

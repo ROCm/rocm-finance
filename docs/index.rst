@@ -9,9 +9,16 @@ AMD ROCm Finance documentation
 Within the ROCm ecosystem, the AMD ROCm Finance toolkit (ROCm-Finance) includes
 production‑ready support for industry‑leading Gradient Boosting Machine (GBM)
 libraries for high-performance finance use cases:
-`<https://github.com/dmlc/XGBoost/>`__,
-`<https://github.com/microsoft/LightGBM>`__ and
-`<https://github.com/Xtra-Computing/ThunderGBM>`__.
+
+* `<https://github.com/dmlc/XGBoost/>`__
+* `<https://github.com/microsoft/LightGBM>`__
+* `<https://github.com/Xtra-Computing/ThunderGBM>`__
+
+These components are accelerated on AMD Instinct GPUs through optimized ROCm
+libraries, leveraging the latest AMD GPU architectures. ROCm enablement of
+these libraries introduces optimized kernels, memory‑management enhancements,
+and seamless multi‑GPU scaling, delivering performance gains over CPU-only
+baselines in intensive workloads.
 
 .. list-table::
    :header-rows: 1
@@ -54,12 +61,6 @@ libraries for high-performance finance use cases:
      - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
-
-These libraries are accelerated on AMD Instinct GPUs through optimized ROCm
-libraries, leveraging the latest AMD GPU architectures. ROCm enablement of
-these libraries introduces optimized kernels, memory‑management enhancements,
-and seamless multi‑GPU scaling, delivering performance gains over CPU-only
-baselines in intensive workloads.
 
 The ROCm-Finance source code is hosted on GitHub at
 `<https://github.com/ROCm/ROCm-Finance>`__.
