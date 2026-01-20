@@ -77,10 +77,10 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/>`__
-      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/>`__
-      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/>`__
 
    .. grid-item-card:: Tutorial
 
-      * `Examples <https://github.com/ROCm/rocm-finance/tree/main/examples>`__
+      * `Examples <https://github.com/AMD-AIOSS/rocm-finance/tree/release/26.01/examples>`__
