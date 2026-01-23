@@ -12,15 +12,22 @@ toolkit, enhancing machine learning capabilites for financial workloads.
 
 ## Release highlights
 
-XGBoost is now fully accelerated on AMD Instinct MI300X GPUs through ROCm 6.4.4
-and 7.0.2. This integration optimizes kernels, improves memory management, and
-enables seamless multi-GPU scaling on supported AMD GPUs.
+XGBoost is fully accelerated on AMD Instinct MI300X and MI325X GPUs (gfx942)
+through ROCm 7.1.1, 7.0.2, or 6.4.4. This integration optimizes kernels,
+improves memory management, and enables seamless multi-GPU scaling on supported
+AMD GPUs.
 
 Key benefits of this integration include:
 
 * **Hardware acceleration:** Parallelizes split-finding on the GPU to deliver significant performance gains over CPU-only baselines.
 * **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
 * **Compliance and precision:** Increases throughput while maintaining the native robustness (L1/L2 regularization) and missing value handling of XGBoost.
+
+```{note}
+ROCm-Finance libraries introduced in the 25.11 release, LightGBM and
+ThunderGBM, are currently only supported on MI300X GPUs, and ROCm 7.0.2
+and 6.4.4.
+```
 
 ## Supported platforms
 

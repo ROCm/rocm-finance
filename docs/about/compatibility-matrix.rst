@@ -13,31 +13,45 @@ ROCm-Finance libraries.
    :header-rows: 1
 
    * - ROCm-Finance version
-     - Operating system
-     - ROCm version
-     - Python version
-     - AMD Instinct GPU
      - Components
+     - AMD Instinct GPU
+     - ROCm version
+     - Operating system
+     - Python version
 
-   * - 26.01
-     - Ubuntu 24.04
-     - 
-       * 7.0.2
-       * 6.4.4
-     - 3.12
-     - MI300X (gfx942)
+   * - 26.01 [#2601-footnote]_
      -
        * XGBoost 3.1.1
        * LightGBM 4.6.0.99
        * ThunderGBM 0.3.16
-
-   * - `25.11 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-25.11/>`__
-     - Ubuntu 24.04
-     - 
+     -
+       * MI325X (XGBoost only) [#2601-footnote]_
+       * MI300X
+     -
+       * 7.1.1 (XGBoost only) [#2601-footnote]_
        * 7.0.2
        * 6.4.4
+     - Ubuntu 24.04
      - 3.12
-     - MI300X (gfx942)
+
+   * - `25.11 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-25.11/>`__
      -
        * LightGBM 4.6.0.99
        * ThunderGBM 0.3.16
+     - MI300X
+     -
+       * 7.0.2
+       * 6.4.4
+     - Ubuntu 24.04
+     - 3.12
+
+.. rubric:: Footnotes
+
+.. [#2601-footnote] Only XGBoost is supported with ROCm 7.1.1.
+   LightGBM and ThunderGBM are currently only supported on MI300X GPUs, and
+   ROCm 7.0.2 and 6.4.4.
+
+.. seealso::
+
+   See :doc:`/install/prerequisites` for an overview of supported hardware and
+   software configurations.
