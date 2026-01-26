@@ -14,22 +14,56 @@ hardware and software prerequisites outlined here.
 Supported hardware configurations
 =================================
 
-ROCm-Finance supports AMD Instinct MI300X GPUs.
-
-Supported software configurations
-=================================
-
-The following table lists the supported ROCm, Ubuntu, and Python versions for
-ROCm-Finance libraries.
+See the :doc:`../about/compatibility-matrix` for an overview of hardware
+support across ROCm-Finance releases.
 
 .. list-table::
    :header-rows: 1
 
-   * - ROCm version
+   * - ROCm Finance component
+     - Supported AMD GPU
+
+   * -
+       * XGBoost 3.1.1
+     -
+       * AMD Instinct MI325X
+       * AMD Instinct MI300X
+
+   * -
+       * LightGBM 4.6.0.99
+       * ThunderGBM 4.6.0.99
+     -
+       * AMD Instinct MI300X
+
+Supported software configurations
+=================================
+
+See the :doc:`../about/compatibility-matrix` for an overview of software
+environment support across ROCm-Finance releases.
+
+.. list-table::
+   :header-rows: 1
+
+   * - ROCm-Finance component
+     - ROCm version
      - Ubuntu version
      - Python version
 
-   * - 7.0.2, 6.4.4
+   * -
+       * XGBoost 3.1.1
+     -
+       * 7.1.1
+       * 7.0.2
+       * 6.4.4
+     - 24.04
+     - 3.12
+
+   * -
+       * LightGBM 4.6.0.99
+       * ThunderGBM 4.6.0.99
+     -
+       * 7.0.2
+       * 6.4.4
      - 24.04
      - 3.12
 
