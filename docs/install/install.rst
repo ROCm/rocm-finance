@@ -137,6 +137,6 @@ Install ROCm-Finance libraries
 To install ROCm-Finance libraries, see the following resources. For
 compatibility information, see the :doc:`/about/compatibility-matrix`.
 
-* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
-* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
-* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__
+* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/install/install.html>`__
+* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
+* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__
