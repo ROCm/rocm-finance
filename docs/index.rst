@@ -15,7 +15,7 @@ libraries for high-performance finance use cases:
    :stub-columns: 1
 
    * -
-     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal>`__
+     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost>`__
      - `LightGBM <https://rocm.docs.amd.com/projects/lightgbm>`__
      - `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm>`__
 
