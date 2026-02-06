@@ -12,16 +12,22 @@ toolkit, enhancing machine learning capabilites for financial workloads.
 
 ## Release highlights
 
-XGBoost is now fully accelerated on AMD Instinct MI300X GPUs via ROCm 6.4.4 and
-7.0.2, leveraging the CDNA 3 architecture and ROCm optimizations. The
-integration features optimized kernels, improved memory management, and
-seamless multi-GPU scaling.
+XGBoost is fully accelerated on AMD Instinct MI300X and MI325X GPUs (gfx942)
+through ROCm 7.1.1, 7.0.2, or 6.4.4. This integration optimizes kernels,
+improves memory management, and enables seamless multi-GPU scaling on supported
+AMD GPUs.
 
 Key benefits of this integration include:
 
-* **Hardware acceleration:** Delivers significant speed-ups over CPU-only baselines in typical finance workloads by parallelizing split-finding on the GPU.
+* **Hardware acceleration:** Parallelizes split-finding on the GPU to deliver significant performance gains over CPU-only baselines.
 * **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
-* **Compliance and precision:** Maintains interpretability (L1/L2 regularization) and missing value handling inherent to XGBoost while increasing throughput.
+* **Compliance and precision:** Increases throughput while maintaining the native robustness (L1/L2 regularization) and missing value handling of XGBoost.
+
+```{note}
+ROCm-Finance libraries introduced in the 25.11 release, LightGBM and
+ThunderGBM, are currently only supported on MI300X GPUs, and ROCm 7.0.2
+and 6.4.4.
+```
 
 ## Supported platforms
 
@@ -37,15 +43,15 @@ To learn about hardware and software environment requirements, see the
   - Version
   - Source
 
-* - [XGBoost](https://rocm.docs.amd.com/projects/xgboost/en/latest/)
+* - [XGBoost](https://rocm.docs.amd.com/projects/xgboost/en/docs-26.01/)
   - 3.1.1
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/xgboost>`
 
-* - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/latest/)
+* - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.01/)
   - 4.6.0.99
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/lightgbm>`
 
-* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/latest/)
+* - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.01/)
   - 0.3.16
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
 

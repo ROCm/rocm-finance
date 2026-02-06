@@ -14,22 +14,56 @@ hardware and software prerequisites outlined here.
 Supported hardware configurations
 =================================
 
-ROCm-Finance supports AMD Instinct MI300X GPUs.
-
-Supported software configurations
-=================================
-
-The following table lists the supported ROCm, Ubuntu, and Python versions for
-ROCm-Finance libraries.
+See the :doc:`../about/compatibility-matrix` for an overview of hardware
+support across ROCm-Finance releases.
 
 .. list-table::
    :header-rows: 1
 
-   * - ROCm version
+   * - ROCm Finance component
+     - Supported AMD GPU
+
+   * -
+       * XGBoost 3.1.1
+     -
+       * AMD Instinct MI325X
+       * AMD Instinct MI300X
+
+   * -
+       * LightGBM 4.6.0.99
+       * ThunderGBM 4.6.0.99
+     -
+       * AMD Instinct MI300X
+
+Supported software configurations
+=================================
+
+See the :doc:`../about/compatibility-matrix` for an overview of software
+environment support across ROCm-Finance releases.
+
+.. list-table::
+   :header-rows: 1
+
+   * - ROCm-Finance component
+     - ROCm version
      - Ubuntu version
      - Python version
 
-   * - 7.0.2, 6.4.4
+   * -
+       * XGBoost 3.1.1
+     -
+       * 7.1.1
+       * 7.0.2
+       * 6.4.4
+     - 24.04
+     - 3.12
+
+   * -
+       * LightGBM 4.6.0.99
+       * ThunderGBM 4.6.0.99
+     -
+       * 7.0.2
+       * 6.4.4
      - 24.04
      - 3.12
 
@@ -45,6 +79,6 @@ to install ROCm-Finance.
 
 2. Install ROCm-Finance libraries. See the following resources to get started:
 
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.01/install/install.html>`__
+   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.01/install/install.html>`__
+   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.01/install/install.html>`__
