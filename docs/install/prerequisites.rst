@@ -24,6 +24,12 @@ support across ROCm-Finance releases.
      - Supported AMD GPU
 
    * -
+       * CatBoost 1.2.8
+     -
+       * AMD Instinct MI325X
+       * AMD Instinct MI300X
+
+   * -
        * XGBoost 3.1.1
      -
        * AMD Instinct MI325X
@@ -48,6 +54,15 @@ environment support across ROCm-Finance releases.
      - ROCm version
      - Ubuntu version
      - Python version
+
+   * -
+       * CatBoost 1.2.8
+     -
+       * 7.1.1
+       * 7.0.2
+       * 6.4.4
+     - 24.04
+     - 3.12
 
    * -
        * XGBoost 3.1.1
@@ -79,6 +94,7 @@ to install ROCm-Finance.
 
 2. Install ROCm-Finance libraries. See the following resources to get started:
 
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/install/install.html>`__
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/install/install.html>`__
+   * `Install CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/install/install.html>`__
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/install/install.html>`__
+   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/install/install.html>`__
+   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/install/install.html>`__

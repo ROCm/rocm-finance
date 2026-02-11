@@ -28,6 +28,21 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
    .. tab-set::
 
+      .. tab-item:: ROCm 7.2.0
+         :sync: rocm711
+
+         .. code-block:: shell
+
+            docker pull rocm/dev-ubuntu-24.04:7.2.0-complete
+
+         .. note::
+
+            LightGBM and ThunderGBM are not yet supported on ROCm 7.2.0.
+
+         See `rocm/dev-ubuntu-24.04:7.2.0-complete
+         <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/7.2.0-complete/images/sha256-c6648f6a60470959f5f9c653ce8397d72fc0adda455942b265a5f973c9ee5891>`__
+         on Docker Hub.
+
       .. tab-item:: ROCm 7.1.1
          :sync: rocm711
 
@@ -137,6 +152,7 @@ Install ROCm-Finance libraries
 To install ROCm-Finance libraries, see the following resources. For
 compatibility information, see the :doc:`/about/compatibility-matrix`.
 
-* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
-* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
-* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__
+* `Install CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/install/install.html>`__
+* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/install/install.html>`__
+* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/install/install.html>`__
+* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/install/install.html>`__

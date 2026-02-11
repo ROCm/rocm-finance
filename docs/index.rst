@@ -15,11 +15,14 @@ libraries for high-performance finance use cases:
    :stub-columns: 1
 
    * -
-     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal>`__
-     - `LightGBM <https://rocm.docs.amd.com/projects/lightgbm>`__
-     - `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm>`__
+     - `CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/>`__
+     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/>`__
+     - `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/>`__
+     - `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/>`__
 
    * - Finance use cases
+     -
+       * CatBoost use cases
      -
        * Credit risk scoring
        * Fraud detection
@@ -33,21 +36,25 @@ libraries for high-performance finance use cases:
        * Large-scale scenario simulations
 
    * - Best for
+     - CatBoost best for
      - General use
      - Large datasets
      - GPU-intensive tasks
 
    * - Tree growth strategy
+     - CatBoost growth strategy
      - Level-wise
      - Leaf-wise
      - Level-wise (GPU)
 
    * - Categorical feature handling
+     - CatBoost feature handling
      - Manual encoding
      - Manual + binning
      - Manual encoding
 
    * - Overfitting control
+     - CatBoost overfitting
      - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
@@ -73,10 +80,11 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/>`__
-      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/latest/>`__
-      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/>`__
+      * `CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/>`__
 
    .. grid-item-card:: Tutorial
 
-      * `Examples <https://github.com/AMD-AIOSS/rocm-finance/tree/release/26.01/examples>`__
+      * `Examples <https://github.com/rocm/rocm-finance/tree/release/26.02/examples>`__
