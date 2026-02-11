@@ -23,6 +23,8 @@ subtrees:
         title: Install ROCm-Finance
   - caption: Components
     entries:
+      - url: https://rocm.docs.amd.com/projects/catboost-internal/en/${branch}/
+        title: CatBoost
       - url: https://rocm.docs.amd.com/projects/xgboost-internal/en/${branch}/
         title: XGBoost
       - url: https://rocm.docs.amd.com/projects/lightgbm-internal/en/${branch}/

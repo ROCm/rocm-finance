@@ -15,10 +15,10 @@ libraries for high-performance finance use cases:
    :stub-columns: 1
 
    * -
-     - `CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/>`__
-     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/>`__
-     - `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/>`__
-     - `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/>`__
+     - `CatBoost <https://rocm.docs.amd.com/projects/catboost-internal/en/docs-26.02/>`__
+     - `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.02/>`__
+     - `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/docs-26.02/>`__
+     - `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/docs-26.02/>`__
 
    * - Finance use cases
      -
@@ -80,11 +80,11 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/>`__
-      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/>`__
-      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/>`__
-      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/>`__
+      * `CatBoost <https://rocm.docs.amd.com/projects/catboost-internal/en/docs-26.02/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.02/>`__
+      * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm-internal/en/docs-26.02/>`__
+      * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm-internal/en/docs-26.02/>`__
 
    .. grid-item-card:: Tutorial
 
-      * `Examples <https://github.com/rocm/rocm-finance/tree/release/26.02/examples>`__
+      * `Examples <https://github.com/AMD-AIOSS/rocm-finance/tree/main/examples>`__
