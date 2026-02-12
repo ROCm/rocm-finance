@@ -22,7 +22,10 @@ libraries for high-performance finance use cases:
 
    * - Finance use cases
      -
-       * CatBoost use cases
+       * Credit scoring
+       * Fraud detection
+       * Customer segmentation
+       * Time-series forecasting
      -
        * Credit risk scoring
        * Fraud detection
@@ -36,28 +39,29 @@ libraries for high-performance finance use cases:
        * Large-scale scenario simulations
 
    * - Best for
-     - CatBoost best for
+     - Categorical Data
      - General use
      - Large datasets
      - GPU-intensive tasks
 
    * - Tree growth strategy
-     - CatBoost growth strategy
+     - Symmetric
      - Level-wise
      - Leaf-wise
      - Level-wise (GPU)
 
    * - Categorical feature handling
-     - CatBoost feature handling
+     - Native handling
      - Manual encoding
      - Manual + binning
      - Manual encoding
 
    * - Overfitting control
-     - CatBoost overfitting
+     - Built-in methods
      - L1/L2 + early stop
      - L1/L2 + sampling
      - Regularization
+
 
 These components are accelerated on AMD Instinct GPUs through optimized ROCm
 libraries, leveraging the latest AMD GPU architectures. ROCm enablement of

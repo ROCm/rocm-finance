@@ -5,34 +5,60 @@ myst:
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
-# AMD ROCm Finance 26.01 release notes
+# AMD ROCm Finance 26.02 release notes
 
-This release introduces the popular XGBoost library to the ROCm-Finance
-toolkit, enhancing machine learning capabilites for financial workloads.
+We are excited to announce the addition of the CatBoost library to the AMD ROCm™ Finance Toolkit.
+
+```{note}
+Catboost is still in Early access and not fully optimized for production workloads. Please don't use it for any critical production workloads
+```
 
 ## Release highlights
 
-XGBoost is fully accelerated on AMD Instinct MI300X and MI325X GPUs (gfx942)
-through ROCm 7.1.1, 7.0.2, or 6.4.4. This integration optimizes kernels,
-improves memory management, and enables seamless multi-GPU scaling on supported
-AMD GPUs.
+CatBoost is a high-performance, open-source gradient boosting library that excels in handling categorical
+features and delivering robust, accurate models. This integration brings the power of CatBoost to the ROCm
+ecosystem, enabling accelerated performance on AMD GPUs for a variety of financial applications.
 
-Key benefits of this integration include:
+Key features of this integration include:
 
-* **Hardware acceleration:** Parallelizes split-finding on the GPU to deliver significant performance gains over CPU-only baselines.
-* **Financial risk optimization:** Accelerates large-scale tasks such as credit risk scoring, fraud detection, and loan default modeling.
-* **Compliance and precision:** Increases throughput while maintaining the native robustness (L1/L2 regularization) and missing value handling of XGBoost.
+* CatBoost is a high-performance machine learning library specifically engineered to handle tabular data with a focus on "plug-and-play" simplicity and superior accuracy. 
+* As a member of the gradient boosting family, it distinguishes itself by natively processing categorical variables—like city names or user IDs—without requiring manual preprocessing, while its unique symmetric tree structure ensures exceptionally fast prediction speeds and reduced overfitting. 
+* In the finance sector, this makes it a powerhouse for workloads such as fraud detection, credit scoring, and algorithmic trading; it thrives on the messy, high-cardinality categorical data typical of transaction logs and banking records, providing robust and reliable results even when hyperparameter tuning is kept to a minimum.
 
-```{note}
-ROCm-Finance libraries introduced in the 25.11 release, LightGBM and
-ThunderGBM, are currently only supported on MI300X GPUs, and ROCm 7.0.2
-and 6.4.4.
-```
+
+````{list-table}
+:header-rows: 1
+
+* - Library
+  - Current Upstream Version
+  - Primary Finance Use‑Cases
+
+* - Catboost
+  - 1.2.8
+  - Credit scoring, Fraud detection, customer segmentation, time-series forecasting
+
+* - XGBoost
+  - 3.1.1
+  - Prediction and feature parallelization, loan default scoring
+
+* - LightGBM
+  - 4.6.0.99
+  - Portfolio optimization, time‑series forecasting, market‑microstructure analysis
+
+* - ThunderGBM
+  - 0.3.16
+  - High‑frequency trading, large‑scale scenario simulations
+````
 
 ## Supported platforms
 
 To learn about hardware and software environment requirements, see the
 {doc}`/about/compatibility-matrix` and the {doc}`/install/prerequisites`.
+
+```{note}
+LightGBM and ThunderGBM, are currently only supported on MI300X GPUs, and ROCm 7.0.2. 
+and 6.4.4.
+```
 
 ## ROCm-Finance components
 
@@ -42,6 +68,10 @@ To learn about hardware and software environment requirements, see the
 * - Component
   - Version
   - Source
+
+* - [CatBoost](https://rocm.docs.amd.com/projects/catboost-internal/en/latest/)
+  - 1.2.8
+  - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/catboost>`
 
 * - [XGBoost](https://rocm.docs.amd.com/projects/xgboost-internal/en/latest/)
   - 3.1.1
@@ -54,5 +84,4 @@ To learn about hardware and software environment requirements, see the
 * - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm-internal/en/latest/)
   - 0.3.16
   - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
-
 ````
