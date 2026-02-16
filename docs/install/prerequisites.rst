@@ -26,6 +26,7 @@ support across ROCm-Finance releases.
    * -
        * CatBoost 1.2.8
      -
+       * AMD Instinct MI355X
        * AMD Instinct MI325X
        * AMD Instinct MI300X
 
@@ -58,9 +59,7 @@ environment support across ROCm-Finance releases.
    * -
        * CatBoost 1.2.8
      -
-       * 7.1.1
        * 7.0.2
-       * 6.4.4
      - 24.04
      - 3.12
 
