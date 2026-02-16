@@ -1,7 +1,7 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "ROCm-Finance 26.01 Release Notes"
+    "description lang=en": "ROCm-Finance Release Notes"
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
@@ -10,7 +10,7 @@ myst:
 We are excited to announce the addition of the CatBoost library to the AMD ROCm™ Finance Toolkit.
 
 ```{note}
-Catboost is still in Early access and not fully optimized for production workloads. Please don't use it for any critical production workloads
+Catboost is still in early access and should not be used for production workloads.
 ```
 
 ## Release highlights
@@ -35,7 +35,7 @@ Key features of this integration include:
 
 * - Catboost
   - 1.2.8
-  - Credit scoring, Fraud detection, customer segmentation, time-series forecasting
+  - Credit scoring, fraud detection, customer segmentation, time-series forecasting
 
 * - XGBoost
   - 3.1.1
