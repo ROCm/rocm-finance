@@ -79,4 +79,4 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Tutorial
 
-      * `Examples <https://github.com/AMD-AIOSS/rocm-finance/tree/release/26.01/examples>`__
+      * `Examples <https://github.com/ROCm/rocm-finance/tree/release/26.01/examples>`__
