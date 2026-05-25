@@ -2,9 +2,11 @@
    :description: AMD ROCm-Finance compatibility information
    :keywords: amd, rocm, finance, gpu, instinct, sdk, system, requirements, compatibility, support, version, upstream, library, env
 
-*********************************
+.. _finance-compat-matrix:
+
+**************************************************************************************
 ROCm-Finance compatibility matrix
-*********************************
+**************************************************************************************
 
 This table provides system and library compatibility information for the
 ROCm-Finance libraries.

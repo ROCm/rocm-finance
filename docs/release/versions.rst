@@ -10,6 +10,9 @@ AMD ROCm Finance release history
    * - Version
      - Release date
 
+   * - `26.05 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-26.05/>`__
+     - June 5, 2026
+
    * - `26.01 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-26.01/>`__
      - February 6, 2026
 

@@ -2,39 +2,42 @@
    :description: Prerequisites for installing ROCm-Finance toolkit libraries
    :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, start
 
+.. _system-requirements:
+
 ***************************************
 ROCm-Finance installation prerequisites
 ***************************************
 
-.. _system-requirements:
-
 Before installing the ROCm-Finance libraries, verify that your system meets the
 hardware and software prerequisites outlined here.
 
-Supported hardware configurations
-=================================
+System requirements
+======================================================================================
 
-ROCm-Finance supports AMD Instinct MI300X GPUs.
+The ROCm-finance libraries are all supported on AMD Instinct MI300X GPUs.
+Individually, XGBoost also supports additional hardware configurations.
 
-Supported software configurations
-=================================
+Before installing any of the libraries, verify that your system meets the hardware
+and software prerequisites for each component, as outlined in the :ref:`finance-compat-matrix` page.
 
-The following table lists the supported ROCm, Ubuntu, and Python versions for
-ROCm-Finance libraries.
+Hardware requirements
+--------------------------------------------------------------------
 
-.. list-table::
-   :header-rows: 1
+The toolkit supports specific AMD GPU accelerators depending on the component:
 
-   * - ROCm version
-     - Ubuntu version
-     - Python version
+- **XGBoost 3.2:** AMD Instinct MI300X, MI325X, MI350X, MI355X
+- **LightGBM 4.6.0.99 & ThunderGBM 0.3.16:** AMD Instinct MI300X only
 
-   * - 7.0.2, 6.4.4
-     - 24.04
-     - 3.12
+Software dependencies
+--------------------------------------------------------------------
+
+ROCm Version Support varies by component:
+
+- **XGBoost:** ROCm 7.2.3, 7.1.1, 7.0.2
+- **LightGBM/ThunderGBM:** ROCm 7.0.2 or 6.4.4
 
 Getting started
-===============
+======================================================================================
 
 After confirming your system meets the supported hardware and software configurations, follow these steps
 to install ROCm-Finance.

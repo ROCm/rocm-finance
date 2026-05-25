@@ -15,7 +15,7 @@ ThunderGBM.
 .. _install-rocm-dev-docker:
 
 Install ROCm
-============
+======================================================================================
 
 To get up and running quickly, a prebuilt ROCm-enabled container is
 recommended. The easiest way is to use the offical ROCm Docker images from
@@ -90,13 +90,14 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 --name rocm6 \
                 rocm/dev-ubuntu-24.04:6.4.4-complete
 
-To learn about ROCm Docker images, see :doc:`rocm-install-on-linux:how-to/docker`.
-
 Install ROCm-Finance libraries
-==============================
+======================================================================================
 
-To install ROCm-Finance libraries, see the following resources. For
-compatibility information, see the :doc:`/about/compatibility-matrix`.
+Each library has distinct prerequisite and environment requirements. To avoid dependency
+conflicts and configuration errors, ensure each library is installed individually rather than
+through a unified installation process.
+
+The installation instructions for each library on ROCm can be found as follows:
 
 * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
 * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
