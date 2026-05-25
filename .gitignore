@@ -1,10 +1,10 @@
 .venv
+.vscode
 build
 
 # documentation artifacts
 _build/
 _images/
-__pycache__/
 _static/
 _templates/
 _toc.yml
@@ -12,4 +12,8 @@ docBin/
 _doxygen/
 _readthedocs/
 __pycache__/
+
+# avoid duplicating due to conf.py
+docs/CHANGELOG.md
 docs/about/release-notes.md
+docs/about/changelog.md

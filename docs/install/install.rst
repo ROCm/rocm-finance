@@ -28,8 +28,38 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
    .. tab-set::
 
+      .. tab-item:: ROCm 7.2.3
+         :sync: rocm723
+
+         .. code-block:: shell
+
+            docker pull rocm/dev-ubuntu-24.04:7.2.3-complete
+
+         .. note::
+
+            LightGBM and ThunderGBM are not supported on ROCm 7.2.3.
+
+         See `rocm/dev-ubuntu-24.04:7.2.3-complete
+         <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/7.2.3-complete/images/sha256-ec1b59bf75ec1122e7a091c0be82301ba12458b038499ef96a5c115876bd78d2>`__
+         on Docker Hub.
+
+      .. tab-item:: ROCm 7.1.1
+         :sync: rocm711
+
+         .. code-block:: shell
+
+            docker pull rocm/dev-ubuntu-24.04:7.1.1-complete
+
+         .. note::
+
+            LightGBM and ThunderGBM are not supported on ROCm 7.1.1.
+
+         See `rocm/dev-ubuntu-24.04:7.1.1-complete
+         <https://hub.docker.com/layers/rocm/dev-ubuntu-24.04/7.1.1-complete/images/sha256-c6648f6a60470959f5f9c653ce8397d72fc0adda455942b265a5f973c9ee5891>`__
+         on Docker Hub.
+
       .. tab-item:: ROCm 7.0.2
-         :sync: rocm7
+         :sync: rocm702
 
          .. code-block:: shell
 
@@ -40,7 +70,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
          on Docker Hub.
 
       .. tab-item:: ROCm 6.4.4
-         :sync: rocm6
+         :sync: rocm644
 
          .. code-block:: shell
 
@@ -54,8 +84,52 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
    .. tab-set::
 
+      .. tab-item:: ROCm 7.2.3
+         :sync: rocm723
+
+         .. note::
+
+            LightGBM and ThunderGBM are not supported on ROCm 7.2.3.
+
+         .. code-block:: shell
+
+            docker run -it \
+                --cap-add=SYS_PTRACE \
+                --ipc=host \
+                --privileged=true \
+                --shm-size=128GB \
+                --network=host \
+                --device=/dev/kfd \
+                --device=/dev/dri \
+                --group-add video \
+                -v $HOME:$HOME \
+                --name rocm7 \
+                rocm/dev-ubuntu-24.04:7.2.3-complete
+
+      .. tab-item:: ROCm 7.1.1
+         :sync: rocm711
+
+         .. note::
+
+            LightGBM and ThunderGBM are not supported on ROCm 7.1.1.
+
+         .. code-block:: shell
+
+            docker run -it \
+                --cap-add=SYS_PTRACE \
+                --ipc=host \
+                --privileged=true \
+                --shm-size=128GB \
+                --network=host \
+                --device=/dev/kfd \
+                --device=/dev/dri \
+                --group-add video \
+                -v $HOME:$HOME \
+                --name rocm7 \
+                rocm/dev-ubuntu-24.04:7.1.1-complete
+
       .. tab-item:: ROCm 7.0.2
-         :sync: rocm7
+         :sync: rocm702
 
          .. code-block:: shell
 
@@ -73,7 +147,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 rocm/dev-ubuntu-24.04:7.0.2-complete
 
       .. tab-item:: ROCm 6.4.4
-         :sync: rocm6
+         :sync: rocm644
 
          .. code-block:: shell
 
@@ -93,12 +167,12 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 Install ROCm-Finance libraries
 ======================================================================================
 
-Each library has distinct prerequisite and environment requirements. To avoid dependency
+Each library can have unique prerequisite and environment requirements. To avoid dependency
 conflicts and configuration errors, ensure each library is installed individually rather than
 through a unified installation process.
 
 The installation instructions for each library on ROCm can be found as follows:
 
-* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/latest/install/install.html>`__
-* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__
-* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/latest/install/install.html>`__
+* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/install/install.html>`__
+* `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.01/install/install.html>`__
+* `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.01/install/install.html>`__
