@@ -30,7 +30,7 @@ the licenses in the individual repositories.
      - `MIT License <https://github.com/ROCm/ThunderGBM/blob/release/0.3.16/LICENSE>`__
 
 .. note::
-   The following additional terms and conditions apply to your use of ROCm-LLMExt documentation.
+   The following additional terms and conditions apply to your use of ROCm-Finance documentation.
 
 
     ©2026 Advanced Micro Devices, Inc. All rights reserved.

@@ -38,7 +38,7 @@ To learn about hardware and software environment requirements, see the
 
 ## ROCm-Finance components
 
-The following table lists ROCm-LLMExt component versions for the 26.05 release. 
+The following table lists ROCm-Finance component versions for the 26.05 release. 
 Click {fab}`github` to go to the component's source on GitHub.
 
 <div class="pst-scrollable-table-container">
@@ -54,7 +54,7 @@ Click {fab}`github` to go to the component's source on GitHub.
             <col span="1">
             <col span="1">
         </colgroup>
-        <tbody class="rocm-llmext-components">
+        <tbody class="rocm-finance-components">
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/">XGBoost</a></td>
                 <td>3.1.1&nbsp;&Rightarrow;&nbsp;<a href="#xgboost-3-2-0">3.2.0</a></td>
