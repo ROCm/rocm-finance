@@ -4,7 +4,7 @@ The AMD ROCm platform is an open-source GPU computing ecosystem designed for hig
 
 | Library    | Current Upstream Version | Primary Finance Use‑Cases                                                       |
 |:----------:|:------------------------:|:-------------------------------------------------------------------------------:|
-| XGBoost    | 3.1.1                    | Prediction and feature parallelization, loan default scoring                    |
+| XGBoost    | 3.2.0                    | Prediction and feature parallelization, loan default scoring                    |
 | LightGBM   | 4.6.0.99                 | Portfolio optimization, time‑series forecasting, market‑microstructure analysis |
 | ThunderGBM | 0.3.16                   | High‑frequency trading, large‑scale scenario simulations                        |
 

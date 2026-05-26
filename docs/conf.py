@@ -9,7 +9,7 @@ import shutil
 import sys
 from pathlib import Path
 
-RELEASE_VERSION = "26.01"
+RELEASE_VERSION = "26.05"
 DOCS_DIR = Path(__file__).parent.resolve()
 ROOT_DIR = DOCS_DIR.parent
 
@@ -36,7 +36,7 @@ html_theme = "rocm_docs_theme"
 html_theme_options = {
     "flavor": "rocm-finance",
 }
-html_title = f"ROCm-Finance {RELEASE_VERSION}"
+html_title = f"ROCm-Finance {RELEASE_VERSION} documentation"
 html_context = {}
 if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True

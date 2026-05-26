@@ -2,87 +2,45 @@
    :description: Prerequisites for installing ROCm-Finance toolkit libraries
    :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, start
 
+.. _system-requirements:
+
 ***************************************
 ROCm-Finance installation prerequisites
 ***************************************
 
-.. _system-requirements:
-
 Before installing the ROCm-Finance libraries, verify that your system meets the
 hardware and software prerequisites outlined here.
 
-Supported hardware configurations
-=================================
+System requirements
+======================================================================================
 
-See the :doc:`../about/compatibility-matrix` for an overview of hardware
-support across ROCm-Finance releases.
+The ROCm-finance libraries are all supported on AMD Instinct MI300X GPUs.
+Individually, XGBoost also supports additional hardware configurations.
 
-.. list-table::
-   :header-rows: 1
+Before installing any of the libraries, verify that your system meets the hardware
+and software prerequisites for each component, as outlined below. 
+See the :ref:`finance-compat-matrix` page for more information.
 
-   * - ROCm Finance component
-     - Supported AMD GPU
+Hardware requirements
+--------------------------------------------------------------------
 
-   * -
-       * CatBoost 1.2.8
-     -
-       * AMD Instinct MI355X
-       * AMD Instinct MI325X
-       * AMD Instinct MI300X
+The toolkit supports specific AMD GPU accelerators depending on the component:
 
-   * -
-       * XGBoost 3.1.1
-     -
-       * AMD Instinct MI325X
-       * AMD Instinct MI300X
+- **XGBoost 3.2.0:** AMD Instinct MI300X, MI325X
+- **LightGBM 4.6.0.99:** AMD Instinct MI300X
+- **ThunderGBM 0.3.16:** AMD Instinct MI300X
 
-   * -
-       * LightGBM 4.6.0.99
-       * ThunderGBM 4.6.0.99
-     -
-       * AMD Instinct MI300X
+Software dependencies
+--------------------------------------------------------------------
 
-Supported software configurations
-=================================
+ROCm version support varies by component:
 
-See the :doc:`../about/compatibility-matrix` for an overview of software
-environment support across ROCm-Finance releases.
-
-.. list-table::
-   :header-rows: 1
-
-   * - ROCm-Finance component
-     - ROCm version
-     - Ubuntu version
-     - Python version
-
-   * -
-       * CatBoost 1.2.8
-     -
-       * 7.0.2
-     - 24.04
-     - 3.12
-
-   * -
-       * XGBoost 3.1.1
-     -
-       * 7.1.1
-       * 7.0.2
-       * 6.4.4
-     - 24.04
-     - 3.12
-
-   * -
-       * LightGBM 4.6.0.99
-       * ThunderGBM 4.6.0.99
-     -
-       * 7.0.2
-       * 6.4.4
-     - 24.04
-     - 3.12
+- **XGBoost:** ROCm 7.2.3, 7.1.1, 7.0.2, 6.4.4
+- **LightGBM:** ROCm 7.0.2, 6.4.4
+- **ThunderGBM:** ROCm 7.0.2, 6.4.4
 
 Getting started
-===============
+======================================================================================
 
 After confirming your system meets the supported hardware and software configurations, follow these steps
 to install ROCm-Finance.
@@ -91,9 +49,10 @@ to install ROCm-Finance.
    start with a ROCm dev Docker. See :ref:`Install ROCm-Finance <install-rocm-dev-docker>`.
    For other ROCm installation options, see :doc:`rocm-install-on-linux:index`.
 
-2. Install ROCm-Finance libraries. See the following resources to get started:
+2. Install ROCm-Finance libraries. Each library can have unique prerequisite and environment requirements. To avoid dependency
+   conflicts and configuration errors, ensure each library is installed individually rather than
+   through a unified installation process. The installation instructions for each library on ROCm can be found as follows:
 
-   * `Install CatBoost <https://rocm.docs.amd.com/projects/catboost/en/docs-26.02/install/install.html>`__
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.02/install/install.html>`__
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.02/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.02/install/install.html>`__
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/install/install.html>`__
+   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/install/install.html>`__
+   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/install/install.html>`__

@@ -2,74 +2,41 @@
    :description: AMD ROCm-Finance compatibility information
    :keywords: amd, rocm, finance, gpu, instinct, sdk, system, requirements, compatibility, support, version, upstream, library, env
 
-*********************************
+.. _finance-compat-matrix:
+
+**************************************************************************************
 ROCm-Finance compatibility matrix
-*********************************
+**************************************************************************************
 
-This table provides system and library compatibility information for the
-ROCm-Finance libraries.
+Use the following matrix to view the ROCm-Finance compatibility and system requirements across releases:
 
-.. list-table::
-   :header-rows: 1
+.. role:: version-start
 
-   * - ROCm-Finance version
-     - Components
-     - AMD Instinct GPU
-     - ROCm version
-     - Operating system
-     - Python version
+.. table::
+   :width: 65%
+   :widths: 20 10 16 12 6 8
+   :align: left
+   :class: compat-matrix format-big-table
 
-   * - 26.02 [#2602-footnote]_
-     -
-       * CatBoost 1.2.8
-       * XGBoost 3.1.1
-       * LightGBM 4.6.0.99
-       * ThunderGBM 0.3.16
-     -
-       * MI325X (XGBoost only) [#2601-footnote]_
-       * MI300X
-     -
-       * 7.1.1 (XGBoost only) [#2601-footnote]_
-       * 7.0.2
-       * 6.4.4
-     - Ubuntu 24.04
-     - 3.12
-
-   * - - `26.01 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-26.01/>`__ [#2601-footnote]_
-     -
-       * XGBoost 3.1.1
-       * LightGBM 4.6.0.99
-       * ThunderGBM 0.3.16
-     -
-       * MI325X (XGBoost only) [#2601-footnote]_
-       * MI300X
-     -
-       * 7.1.1 (XGBoost only) [#2601-footnote]_
-       * 7.0.2
-       * 6.4.4
-     - Ubuntu 24.04
-     - 3.12
-
-   * - `25.11 <https://rocm.docs.amd.com/projects/rocm-finance/en/docs-25.11/>`__
-     -
-       * LightGBM 4.6.0.99
-       * ThunderGBM 0.3.16
-     - MI300X
-     -
-       * 7.0.2
-       * 6.4.4
-     - Ubuntu 24.04
-     - 3.12
-
-.. rubric:: Footnotes
-
-.. [#2602-footnote] Only CatBoost and XGBoost are supported with ROCm 7.1.1.
-   LightGBM and ThunderGBM are currently only supported on MI300X GPUs, and
-   ROCm 7.0.2 and 6.4.4.
-
-.. [#2601-footnote] Only XGBoost is supported with ROCm 7.1.1.
-   LightGBM and ThunderGBM are currently only supported on MI300X GPUs, and
-   ROCm 7.0.2 and 6.4.4.
+   +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
+   |  ROCm-Finance version  |                  Component                         | AMD Instinct GPU | ROCm version | Ubuntu |    Python      |
+   +========================+====================================================+==================+==============+========+================+
+   | :version-start:`26.05` | `XGBoost 3.2.0                                     | MI325X,          | 7.2.3,       | 24.04  | 3.12           |
+   |                        | <https://rocm.docs.amd.com/projects/               | MI300X           | 7.1.1,       |        |                |
+   |                        | xgboost/en/docs-26.05/>`__                         |                  | 7.0.2        |        |                |
+   +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
+   | :version-start:`26.01` | `XGBoost 3.1.1                                     | MI325X,          | 7.1.1,       | 24.04  | 3.12           |
+   |                        | <https://rocm.docs.amd.com/projects/               | MI300X           | 7.0.2,       |        |                |
+   |                        | xgboost/en/docs-26.01/>`__                         |                  | 6.4.4        |        |                |
+   +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
+   | :version-start:`25.11` | `LightGBM 4.6.0.99                                 | MI300X           | 7.0.2,       | 24.04  | 3.12           |
+   |                        | <https://rocm.docs.amd.com/projects/               |                  | 6.4.4        |        |                |
+   |                        | lightgbm/en/docs-25.11/>`__                        |                  |              |        |                |
+   +                        +----------------------------------------------------+------------------+--------------+--------+----------------+
+   |                        | `ThunderGBM 0.3.16                                 | MI300X           | 7.0.2,       | 24.04  | 3.12           |
+   |                        | <https://rocm.docs.amd.com/projects/               |                  | 6.4.4        |        |                |
+   |                        | thundergbm/en/docs-25.11/>`__                      |                  |              |        |                |
+   +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
 
 .. seealso::
 
