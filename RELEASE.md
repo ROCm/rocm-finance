@@ -56,7 +56,7 @@ Click {fab}`github` to go to the component's source on GitHub.
         </colgroup>
         <tbody class="rocm-finance-components">
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/">XGBoost</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/">XGBoost</a></td>
                 <td>3.1.1&nbsp;&Rightarrow;&nbsp;<a href="#xgboost-3-2-0">3.2.0</a></td>
                 <td><a href="https://github.com/ROCm/xgboost/tree/release/3.2.0"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>

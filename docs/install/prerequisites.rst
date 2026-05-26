@@ -53,6 +53,6 @@ to install ROCm-Finance.
    conflicts and configuration errors, ensure each library is installed individually rather than
    through a unified installation process. The installation instructions for each library on ROCm can be found as follows:
 
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/install/install.html>`__
+   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/install/install.html>`__
    * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/install/install.html>`__
    * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/install/install.html>`__
