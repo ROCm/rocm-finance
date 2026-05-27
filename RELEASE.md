@@ -80,7 +80,7 @@ Click {fab}`github` to go to the component's source on GitHub.
 
 XGBoost 3.2.0 emphasizes external-memory training on GPUs, deeper multi-target / vector-leaf tree support, general GPU hist improvements, and housekeeping such as removal of the deprecated CLI.
 
-The full list lives in the [XGBoost 3.2.0 changelog](https://xgboost.readthedocs.io/en/release_3.2.0/changes/v3.2.0.html).
+The full list is available in the [XGBoost 3.2.0 changelog](https://xgboost.readthedocs.io/en/release_3.2.0/changes/v3.2.0.html).
 
 #### Key features and improvements
 
@@ -104,6 +104,6 @@ Performance improvements for GPU histograms:
 #### Known limitations
 
 - GPU SHAP fallback: SHAP value computation falls back to CPU
-- Additional dependencies: Features requiring extra packages (e.g., RMM) are not supported
+- Additional dependencies: Features requiring extra packages (for example, RMM) are not supported
 - Multi-GPU limitations: Supported only via PySpark with limited functionality, other frameworks are unsupported
 - API support for Python and C++ only

@@ -2,6 +2,8 @@
    :description: Install ROCm-Finance SDK libraries
    :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, quick, start, xgboost
 
+.. _install-rocm-dev-docker:
+
 ********************
 Install ROCm-Finance
 ********************
@@ -12,7 +14,8 @@ pulling and running prebuilt ROCm Docker images for supported Ubuntu versions
 and installing ROCm-Finance libraries such as XGBoost, LightGBM, and
 ThunderGBM.
 
-.. _install-rocm-dev-docker:
+Before proceeding, ensure your system meets the supported hardware and 
+software configurations outlined in :ref:`system-requirements`.
 
 Install ROCm
 ======================================================================================

@@ -14,15 +14,15 @@ hardware and software prerequisites outlined here.
 System requirements
 ======================================================================================
 
-The ROCm-finance libraries are all supported on AMD Instinct MI300X GPUs.
-Individually, XGBoost also supports additional hardware configurations.
+All ROCm-Finance libraries are supported on AMD Instinct MI300X GPUs.
+XGBoost individually supports the additional hardware configuration of AMD Instinct MI325X GPUs.
 
-Before installing any of the libraries, verify that your system meets the hardware
+Before installing any component, verify that your system meets the hardware
 and software prerequisites for each component, as outlined below. 
 See the :ref:`finance-compat-matrix` page for more information.
 
 Hardware requirements
---------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 The toolkit supports specific AMD GPU accelerators depending on the component:
 
@@ -30,8 +30,8 @@ The toolkit supports specific AMD GPU accelerators depending on the component:
 - **LightGBM 4.6.0.99:** AMD Instinct MI300X
 - **ThunderGBM 0.3.16:** AMD Instinct MI300X
 
-Software dependencies
---------------------------------------------------------------------
+Software requirements
+----------------------------------------------------------------------------------------
 
 ROCm version support varies by component:
 
@@ -39,20 +39,9 @@ ROCm version support varies by component:
 - **LightGBM:** ROCm 7.0.2, 6.4.4
 - **ThunderGBM:** ROCm 7.0.2, 6.4.4
 
-Getting started
-======================================================================================
+Get started
+---------------------------------------------------------------------------------------
 
-After confirming your system meets the supported hardware and software configurations, follow these steps
-to install ROCm-Finance.
-
-1. Install a supported ROCm version. To get up and running quickly, it's recommended to
-   start with a ROCm dev Docker. See :ref:`Install ROCm-Finance <install-rocm-dev-docker>`.
-   For other ROCm installation options, see :doc:`rocm-install-on-linux:index`.
-
-2. Install ROCm-Finance libraries. Each library can have unique prerequisite and environment requirements. To avoid dependency
-   conflicts and configuration errors, ensure each library is installed individually rather than
-   through a unified installation process. The installation instructions for each library on ROCm can be found as follows:
-
-   * `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/install/install.html>`__
-   * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/install/install.html>`__
-   * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/install/install.html>`__
+After confirming your system meets the supported hardware and software configurations, follow 
+the steps outlined in :ref:`install-rocm-dev-docker`. For other ROCm installation options, 
+see :doc:`rocm-install-on-linux:index`.
