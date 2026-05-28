@@ -27,7 +27,7 @@ the licenses in the individual repositories.
    * - `LightGBM <https://github.com/ROCm/LightGBM>`__
      - `Apache 2.0 <https://github.com/ROCm/LightGBM/blob/release/4.6.0.99/LICENSE>`__
    * - `ThunderGBM <https://github.com/ROCm/ThunderGBM>`__
-     - `MIT License <https://github.com/ROCm/ThunderGBM/blob/release/0.3.16/LICENSE>`__
+     - `Apache 2.0 <https://github.com/ROCm/ThunderGBM/blob/release/0.3.16/LICENSE>`__
 
 .. note::
    The following additional terms and conditions apply to your use of ROCm-Finance documentation.
