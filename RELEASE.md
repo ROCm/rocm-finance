@@ -8,7 +8,7 @@ myst:
 # AMD ROCm Finance 26.05 release notes
 
 This release introduces an update to the popular XGBoost library in the ROCm-Finance
-toolkit, enhancing machine learning capabilites for financial workloads.
+toolkit, enhancing machine learning capabilities for financial workloads.
 
 ## Release highlights
 

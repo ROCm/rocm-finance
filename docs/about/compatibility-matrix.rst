@@ -21,22 +21,32 @@ Use the following matrix to view the ROCm-Finance compatibility and system requi
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
    |  ROCm-Finance version  |                  Component                         | AMD Instinct GPU | ROCm version | Ubuntu |    Python      |
    +========================+====================================================+==================+==============+========+================+
-   | :version-start:`26.05` | `XGBoost 3.2.0                                     | MI325X,          | 7.2.3,       | 24.04  | 3.12           |
-   |                        | <https://rocm.docs.amd.com/projects/               | MI300X           | 7.1.1,       |        |                |
-   |                        | xgboost-internal/en/docs-26.05/>`__                |                  | 7.0.2        |        |                |
+   | :version-start:`26.05` | `XGBoost 3.2.0                                     | MI355X [#f1]_,   | 7.2.3,       | 24.04  | 3.12           |
+   |                        | <https://rocm.docs.amd.com/projects/               | MI325X,          | 7.1.1,       |        |                |
+   |                        | xgboost-internal/en/docs-26.05/>`__                | MI300X           | 7.0.2        |        |                |
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
-   | :version-start:`26.01` | `XGBoost 3.1.1                                     | MI325X,          | 7.1.1,       | 24.04  | 3.12           |
+   | :version-start:`26.01` | `XGBoost 3.1.1                                     | MI325X [#f1]_,   | 7.1.1,       | 24.04  | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/               | MI300X           | 7.0.2,       |        |                |
    |                        | xgboost/en/docs-26.01/>`__                         |                  | 6.4.4        |        |                |
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
-   | :version-start:`25.11` | `LightGBM 4.6.0.99                                 | MI300X           | 7.0.2,       | 24.04  | 3.12           |
+   | :version-start:`25.11` | `LightGBM 4.6.0.99                                 | MI300X [#f2]_    | 7.0.2,       | 24.04  | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/               |                  | 6.4.4        |        |                |
    |                        | lightgbm/en/docs-25.11/>`__                        |                  |              |        |                |
    +                        +----------------------------------------------------+------------------+--------------+--------+----------------+
-   |                        | `ThunderGBM 0.3.16                                 | MI300X           | 7.0.2,       | 24.04  | 3.12           |
+   |                        | `ThunderGBM 0.3.16                                 | MI300X [#f2]_    | 7.0.2,       | 24.04  | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/               |                  | 6.4.4        |        |                |
    |                        | thundergbm/en/docs-25.11/>`__                      |                  |              |        |                |
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
+
+
+.. rubric:: Footnotes
+
+.. [#f1] Only XGBoost is supported with ROCm 7.2.3 and 7.1.1,
+   with support for MI355X (ROCm 7.2.3 only) and MI325X GPUs.
+
+.. [#f2] LightGBM and ThunderGBM are currently only supported on MI300X GPUs, and
+   ROCm 7.0.2 and 6.4.4.
+
 
 .. seealso::
 

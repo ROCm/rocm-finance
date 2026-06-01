@@ -21,7 +21,7 @@ Install ROCm
 ======================================================================================
 
 To get up and running quickly, a prebuilt ROCm-enabled container is
-recommended. The easiest way is to use the offical ROCm Docker images from
+recommended. The easiest way is to use the official ROCm Docker images from
 Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 <rocm-install-on-linux:docker-rocm-images>` for more information.
 
@@ -106,7 +106,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 --device=/dev/dri \
                 --group-add video \
                 -v $HOME:$HOME \
-                --name rocm7 \
+                --name rocm723 \
                 rocm/dev-ubuntu-24.04:7.2.3-complete
 
       .. tab-item:: ROCm 7.1.1
@@ -128,7 +128,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 --device=/dev/dri \
                 --group-add video \
                 -v $HOME:$HOME \
-                --name rocm7 \
+                --name rocm711 \
                 rocm/dev-ubuntu-24.04:7.1.1-complete
 
       .. tab-item:: ROCm 7.0.2
@@ -146,7 +146,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 --device=/dev/dri \
                 --group-add video \
                 -v $HOME:$HOME \
-                --name rocm7 \
+                --name rocm702 \
                 rocm/dev-ubuntu-24.04:7.0.2-complete
 
       .. tab-item:: ROCm 6.4.4
@@ -164,7 +164,7 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
                 --device=/dev/dri \
                 --group-add video \
                 -v $HOME:$HOME \
-                --name rocm6 \
+                --name rocm644 \
                 rocm/dev-ubuntu-24.04:6.4.4-complete
 
 Install ROCm-Finance libraries

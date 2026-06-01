@@ -26,9 +26,9 @@ Hardware requirements
 
 The toolkit supports specific AMD GPU accelerators depending on the component:
 
-- **XGBoost 3.2.0:** AMD Instinct MI300X, MI325X
-- **LightGBM 4.6.0.99:** AMD Instinct MI300X
-- **ThunderGBM 0.3.16:** AMD Instinct MI300X
+- **XGBoost 3.2.0:** AMD Instinct™ MI355X (ROCm 7.2.3 only), MI325X, MI300X
+- **LightGBM 4.6.0.99:** AMD Instinct™ MI300X
+- **ThunderGBM 0.3.16:** AMD Instinct™ MI300X
 
 Software requirements
 ----------------------------------------------------------------------------------------
