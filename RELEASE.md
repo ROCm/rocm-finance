@@ -19,8 +19,9 @@ and 6.4.4.
 ```
 
 XGBoost is fully accelerated on AMD Instinct MI300X and MI325X GPUs (gfx942)
-through ROCm 7.2.3, 7.1.1, 7.0.2, and 6.4.4. This integration optimizes kernels,
-improves memory management, and enables seamless multi-GPU scaling on supported
+through ROCm 7.2.3, 7.1.1, 7.0.2, and 6.4.4. With the update to XGBoost in this release,
+it is additionally supported on MI355X GPUs (only with ROCm 7.2.3). The XGBoost integration 
+optimizes kernels, improves memory management, and enables seamless multi-GPU scaling on supported
 AMD GPUs.
 
 Key benefits of this integration include:
