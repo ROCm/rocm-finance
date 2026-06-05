@@ -14,8 +14,9 @@ hardware and software prerequisites outlined here.
 System requirements
 ======================================================================================
 
-All ROCm-Finance libraries are supported on AMD Instinct MI300X GPUs.
-XGBoost individually supports the additional hardware configuration of AMD Instinct MI325X GPUs.
+All ROCm-Finance libraries are supported on AMD Instinct™ MI300X GPUs.
+XGBoost individually supports the additional hardware configurations of
+AMD Instinct™ MI325X and MI355X GPUs (ROCm 7.2.3 only).
 
 Before installing any component, verify that your system meets the hardware
 and software prerequisites for each component, as outlined below. 
