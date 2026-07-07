@@ -21,9 +21,9 @@ Use the following matrix to view the ROCm-Finance compatibility and system requi
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
    |  ROCm-Finance version  |                  Component                         | AMD Instinct GPU | ROCm version | Ubuntu |    Python      |
    +========================+====================================================+==================+==============+========+================+
-   | :version-start:`26.05` | `XGBoost 3.2.0                                     | MI355X [#f1]_,   | 7.2.3,       | 24.04  | 3.12           |
-   |                        | <https://rocm.docs.amd.com/projects/               | MI325X,          | 7.1.1,       |        |                |
-   |                        | xgboost-internal/en/docs-26.05/>`__                | MI300X           | 7.0.2        |        |                |
+   | :version-start:`26.05` | `XGBoost 3.2.0                                     | MI355X [#f1]_,   | 7.2.3,       | 24.04  | 3.12,          |
+   |                        | <https://rocm.docs.amd.com/projects/               | MI325X,          | 7.1.1,       |        | 3.11,          |
+   |                        | xgboost-internal/en/docs-26.05/>`__                | MI300X           | 7.0.2        |        | 3.10           |
    +------------------------+----------------------------------------------------+------------------+--------------+--------+----------------+
    | :version-start:`26.01` | `XGBoost 3.1.1                                     | MI325X [#f1]_,   | 7.1.1,       | 24.04  | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/               | MI300X           | 7.0.2,       |        |                |
