@@ -1,15 +1,15 @@
 .. meta::
-   :description: Install ROCm-Finance SDK libraries
+   :description: Install AMD Finance SDK libraries
    :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, quick, start
 
 ********************
-Install ROCm-Finance
+Install AMD Finance
 ********************
 
 This page provides brief guidance and recommendations on setting up
 a ROCm-enabled environment for financial computing workloads. This includes
 pulling and running prebuilt ROCm Docker images for supported Ubuntu versions
-and installing ROCm-Finance libraries such as LightGBM, and
+and installing AMD Finance libraries such as LightGBM, and
 ThunderGBM.
 
 .. _install-rocm-dev-docker:
@@ -92,10 +92,10 @@ Docker Hub. See :ref:`Docker images in the ROCm ecosystem
 
 To learn about ROCm Docker images, see :doc:`rocm-install-on-linux:how-to/docker`.
 
-Install ROCm-Finance libraries
+Install AMD Finance libraries
 ==============================
 
-Get started using ROCm for the finance domain. To install ROCm-Finance libraries,
+Get started using ROCm for the finance domain. To install AMD Finance libraries,
 see the following resources. For compatibility information, see the :doc:`/about/compatibility-matrix`.
 
 * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/latest/install/install.html>`__

@@ -20,7 +20,7 @@ subtrees:
       - file: install/prerequisites.rst
         title: Prerequisites
       - file: install/install.rst
-        title: Install ROCm-Finance
+        title: Install AMD Finance
   - caption: Components
     entries:
       - url: https://rocm.docs.amd.com/projects/lightgbm/en/${branch}/
@@ -29,7 +29,7 @@ subtrees:
         title: ThunderGBM
   - caption: Tutorial
     entries:
-      - url: https://github.com/ROCm/rocm-finance/tree/release/25.11/examples
+      - url: https://github.com/AMD-Ecosystem/rocm-finance/tree/release/25.11/examples
         title: Examples
   - caption: About
     entries:

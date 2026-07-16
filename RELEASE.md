@@ -5,9 +5,9 @@ myst:
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
-# AMD ROCm Finance 25.11 release notes
+# AMD Finance 25.11 release notes
 
-This is the initial release of the AMD ROCm Finance toolkit (ROCm-Finance), providing
+This is the initial release of the AMD Finance toolkit, providing
 production-ready support for GPU-accelerated Gradient Boosting Machine (GBM)
 libraries on ROCm 7.0 and 6.4.
 
@@ -23,14 +23,14 @@ This release introduces two libraries with ROCm support.
   using GPUs, enabling high-performance machine learning for large-scale
   datasets.
 
-See [ROCm-Finance components](#rocm-finance-components) for details.
+See [AMD Finance components](#amd-finance-components) for details.
 
 ## Supported platforms
 
 To learn about hardware and software environment requirements, see the
 {doc}`/about/compatibility-matrix` and the {doc}`/install/prerequisites`.
 
-## ROCm-Finance components
+## AMD Finance components
 
 ````{list-table}
 :header-rows: 1
@@ -41,10 +41,10 @@ To learn about hardware and software environment requirements, see the
 
 * - [LightGBM](https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/)
   - 4.6.0.99
-  - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/lightgbm>`
+  - {icon}`fa-brands fa-github fa-lg <https://github.com/AMD-Ecosystem/lightgbm>`
 
 * - [ThunderGBM](https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/)
   - 0.3.16
-  - {icon}`fa-brands fa-github fa-lg <https://github.com/ROCm/thundergbm>`
+  - {icon}`fa-brands fa-github fa-lg <https://github.com/AMD-Ecosystem/thundergbm>`
 
 ````
