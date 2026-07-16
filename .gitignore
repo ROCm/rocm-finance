@@ -13,3 +13,6 @@ _doxygen/
 _readthedocs/
 __pycache__/
 docs/about/release-notes.md
+xgboost/
+LightGBM/
+ThunderGBM/

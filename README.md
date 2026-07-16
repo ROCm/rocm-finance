@@ -1,6 +1,6 @@
-# AMD ROCm™ Finance Toolkit
+# AMD Finance Toolkit
 
-The AMD ROCm platform is an open-source GPU computing ecosystem designed for high-performance workloads. Within this ecosystem, AMD ROCm Finance includes official, production‑ready support for three industry‑leading Gradient Boosting Machine (GBM) libraries on ROCm 6.4 and 7.0:
+The AMD ROCm platform is an open-source GPU computing ecosystem designed for high-performance workloads. Within this ecosystem, AMD Finance includes official, production‑ready support for three industry‑leading Gradient Boosting Machine (GBM) libraries on ROCm 6.4 and 7.0:
 
 | Library    | Current Upstream Version | Primary Finance Use‑Cases                                                       |
 |:----------:|:------------------------:|:-------------------------------------------------------------------------------:|
