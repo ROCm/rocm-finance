@@ -6,7 +6,7 @@
 AMD Finance documentation
 ******************************
 
-Within the ROCm ecosystem, the AMD ROCm Finance toolkit (AMD Finance) includes
+Within the ROCm ecosystem, the AMD Finance toolkit includes
 production‑ready support for industry‑leading Gradient Boosting Machine (GBM)
 libraries for high-performance finance use cases:
 `<https://github.com/microsoft/LightGBM>`__ and
