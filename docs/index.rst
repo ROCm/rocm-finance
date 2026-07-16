@@ -3,7 +3,7 @@
    :keywords: amd, rocm, finance, gpu, instinct, sdk, toolkit, library, fintech, gbm
 
 ******************************
-AMD ROCm Finance documentation
+AMD Finance documentation
 ******************************
 
 Within the ROCm ecosystem, the AMD ROCm Finance toolkit (AMD Finance) includes
