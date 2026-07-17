@@ -14,7 +14,7 @@ subtrees:
       - file: install/prerequisites.rst
         title: Prerequisites
       - file: install/install.rst
-        title: Install ROCm-Finance
+        title: Install AMD Finance
 
   - caption: Components
     entries:
@@ -27,7 +27,7 @@ subtrees:
 
   - caption: Tutorial
     entries:
-      - url: https://github.com/ROCm/rocm-finance/tree/release/26.05/examples
+      - url: https://github.com/AMD-Ecosystem/rocm-finance/tree/release/26.05/examples
         title: Examples
 
   - caption: About

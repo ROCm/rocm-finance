@@ -1,19 +1,19 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "ROCm-Finance 26.05 Release Notes"
+    "description lang=en": "AMD Finance 26.05 Release Notes"
     "keywords": "amd, rocm, gpu, finance, financial, sdk, gbm, credit, risk, forecast, simulation, trade, stock, optimize, portfolio, time, model"
 ---
 
-# AMD ROCm Finance 26.05 release notes
+# AMD Finance 26.05 release notes
 
-This release introduces an update to the popular XGBoost library in the ROCm-Finance
+This release introduces an update to the popular XGBoost library in the AMD Finance
 toolkit, enhancing machine learning capabilities for financial workloads.
 
 ## Release highlights
 
 ```{note}
-ROCm-Finance libraries introduced in the 25.11 release, LightGBM and
+AMD Finance libraries introduced in the 25.11 release, LightGBM and
 ThunderGBM, are currently only supported on MI300X GPUs, and ROCm 7.0.2
 and 6.4.4.
 ```
@@ -37,9 +37,9 @@ To learn about hardware and software environment requirements, see the
 {doc}`/about/compatibility-matrix` and the {doc}`/install/prerequisites`.
 
 
-## ROCm-Finance components
+## AMD Finance components
 
-The following table lists ROCm-Finance component versions for the 26.05 release. 
+The following table lists AMD Finance component versions for the 26.05 release. 
 Click {fab}`github` to go to the component's source on GitHub.
 
 <div class="pst-scrollable-table-container">
@@ -59,17 +59,17 @@ Click {fab}`github` to go to the component's source on GitHub.
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/">XGBoost</a></td>
                 <td>3.1.1&nbsp;&Rightarrow;&nbsp;<a href="#xgboost-3-2-0">3.2.0</a></td>
-                <td><a href="https://github.com/ROCm/xgboost/tree/release/3.2.0"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/xgboost/tree/release/3.2.0"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/">LightGBM</a></td>
                 <td>4.6.0.99</td>
-                <td><a href="https://github.com/ROCm/LightGBM/tree/release/4.6.0.99"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/LightGBM/tree/release/4.6.0.99"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/">ThunderGBM</a></td>
                 <td>0.3.16</td>
-                <td><a href="https://github.com/ROCm/ThunderGBM/tree/release/0.3.16"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/ThunderGBM/tree/release/0.3.16"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>

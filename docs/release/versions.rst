@@ -1,7 +1,7 @@
 :orphan:
 
 ********************************
-AMD ROCm Finance release history
+AMD Finance release history
 ********************************
 
 .. list-table::

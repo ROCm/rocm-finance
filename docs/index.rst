@@ -1,12 +1,12 @@
 .. meta::
-   :description: AMD ROCm-Finance Toolkit
+   :description: AMD Finance Toolkit
    :keywords: amd, rocm, finance, gpu, instinct, sdk, toolkit, library, fintech, gbm
 
 ******************************
-AMD ROCm Finance documentation
+AMD Finance documentation
 ******************************
 
-Within the ROCm ecosystem, the AMD ROCm Finance toolkit (ROCm-Finance) includes
+Within the ROCm ecosystem, the AMD Finance toolkit includes
 production‑ready support for industry‑leading Gradient Boosting Machine (GBM)
 libraries for high-performance finance use cases:
 
@@ -58,10 +58,10 @@ these libraries introduces optimized kernels, memory‑management enhancements,
 and seamless multi‑GPU scaling, delivering performance gains over CPU-only
 baselines in intensive workloads.
 
-The ROCm-Finance source code is hosted on GitHub at
-`<https://github.com/ROCm/ROCm-Finance>`__.
+The AMD Finance source code is hosted on GitHub at
+`<https://github.com/AMD-Ecosystem/AMD Finance>`__.
 
-ROCm-Finance documentation is organized into the following categories:
+AMD Finance documentation is organized into the following categories:
 
 .. grid:: 2
    :gutter: 3
@@ -79,4 +79,4 @@ ROCm-Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Tutorial
 
-      * `Examples <https://github.com/ROCm/rocm-finance/tree/release/26.05/examples>`__
+      * `Examples <https://github.com/AMD-Ecosystem/rocm-finance/tree/release/26.05/examples>`__

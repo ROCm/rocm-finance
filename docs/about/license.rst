@@ -1,18 +1,18 @@
 .. meta::
-   :description: AMD ROCm-Finance license
+   :description: AMD Finance license
    :keywords: apache, amd, rocm, software, license, open, source, code, package
 
 **************************************************************************************
-ROCm-Finance license
+AMD Finance license
 **************************************************************************************
 
 .. include:: ../../LICENSE
   :literal:
 
-ROCm-Finance component licenses
+AMD Finance component licenses
 --------------------------------------------------------------------------------------
 
-ROCm-Finance includes multiple components, each governed by its own license.
+AMD Finance includes multiple components, each governed by its own license.
 Links to the license terms for each component can be seen below. Some components
 may be third-party and subject to additional licenses. For complete details, review
 the licenses in the individual repositories.
@@ -22,15 +22,15 @@ the licenses in the individual repositories.
 
    * - Component
      - License
-   * - `XGBoost <https://github.com/ROCm/xgboost>`__
-     - `Apache 2.0 <https://github.com/ROCm/xgboost/blob/release/3.2.0/LICENSE>`__
-   * - `LightGBM <https://github.com/ROCm/LightGBM>`__
-     - `Apache 2.0 <https://github.com/ROCm/LightGBM/blob/release/4.6.0.99/LICENSE>`__
-   * - `ThunderGBM <https://github.com/ROCm/ThunderGBM>`__
-     - `Apache 2.0 <https://github.com/ROCm/ThunderGBM/blob/release/0.3.16/LICENSE>`__
+   * - `XGBoost <https://github.com/AMD-Ecosystem/xgboost>`__
+     - `Apache 2.0 <https://github.com/AMD-Ecosystem/xgboost/blob/release/3.2.0/LICENSE>`__
+   * - `LightGBM <https://github.com/AMD-Ecosystem/LightGBM>`__
+     - `Apache 2.0 <https://github.com/AMD-Ecosystem/LightGBM/blob/release/4.6.0.99/LICENSE>`__
+   * - `ThunderGBM <https://github.com/AMD-Ecosystem/ThunderGBM>`__
+     - `Apache 2.0 <https://github.com/AMD-Ecosystem/ThunderGBM/blob/release/0.3.16/LICENSE>`__
 
 .. note::
-   The following additional terms and conditions apply to your use of ROCm-Finance documentation.
+   The following additional terms and conditions apply to your use of AMD Finance documentation.
 
 
     ©2026 Advanced Micro Devices, Inc. All rights reserved.

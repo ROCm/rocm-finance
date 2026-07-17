@@ -1,20 +1,20 @@
 .. meta::
-   :description: Prerequisites for installing ROCm-Finance toolkit libraries
+   :description: Prerequisites for installing AMD Finance toolkit libraries
    :keywords: amd, rocm, finance, financial, gpu, install, docker, libs, pip, package, lightgbm, thundergbm, setup, start
 
 .. _system-requirements:
 
 ***************************************
-ROCm-Finance installation prerequisites
+AMD Finance installation prerequisites
 ***************************************
 
-Before installing the ROCm-Finance libraries, verify that your system meets the
+Before installing the AMD Finance libraries, verify that your system meets the
 hardware and software prerequisites outlined here.
 
 System requirements
 ======================================================================================
 
-All ROCm-Finance libraries are supported on AMD Instinct™ MI300X GPUs.
+All AMD Finance libraries are supported on AMD Instinct™ MI300X GPUs.
 XGBoost individually supports the additional hardware configurations of
 AMD Instinct™ MI325X and MI355X GPUs (ROCm 7.2.3 only).
 
