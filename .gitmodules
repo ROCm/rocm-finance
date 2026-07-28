@@ -1,12 +1,12 @@
 [submodule "xgboost"]
 	path = xgboost
-	url = https://github.com/rocm/xgboost
-	branch = release/3.1.1
+	url = https://github.com/AMD-Ecosystem/xgboost
+	branch = release/3.2.0
 [submodule "LightGBM"]
 	path = LightGBM
-	url = https://github.com/ROCm/LightGBM
+	url = https://github.com/AMD-Ecosystem/LightGBM
 	branch = release/4.6.0.99
 [submodule "ThunderGBM"]
 	path = ThunderGBM
-	url = https://github.com/ROCm/ThunderGBM
+	url = https://github.com/AMD-Ecosystem/ThunderGBM
 	branch = release/0.3.16
