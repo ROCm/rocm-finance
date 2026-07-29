@@ -59,7 +59,7 @@ and seamless multi‑GPU scaling, delivering performance gains over CPU-only
 baselines in intensive workloads.
 
 The AMD Finance source code is hosted on GitHub at
-`<https://github.com/AMD-Ecosystem/AMD Finance>`__.
+`<https://github.com/AMD-Ecosystem/ROCm-finance>`__.
 
 AMD Finance documentation is organized into the following categories:
 
