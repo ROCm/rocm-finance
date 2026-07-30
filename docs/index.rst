@@ -73,7 +73,7 @@ AMD Finance documentation is organized into the following categories:
 
    .. grid-item-card:: Components
 
-      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/>`__
+      * `XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/>`__
       * `LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11/>`__
       * `ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-25.11/>`__
 

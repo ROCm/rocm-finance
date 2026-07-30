@@ -18,7 +18,7 @@ subtrees:
 
   - caption: Components
     entries:
-      - url: https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05
+      - url: https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05
         title: XGBoost
       - url: https://rocm.docs.amd.com/projects/lightgbm/en/docs-25.11
         title: LightGBM

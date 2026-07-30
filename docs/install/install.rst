@@ -176,6 +176,6 @@ through a unified installation process.
 
 The installation instructions for each library on ROCm can be found as follows:
 
-* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost-internal/en/docs-26.05/install/install.html>`__
+* `Install XGBoost <https://rocm.docs.amd.com/projects/xgboost/en/docs-26.05/install/install.html>`__
 * `Install LightGBM <https://rocm.docs.amd.com/projects/lightgbm/en/docs-26.01/install/install.html>`__
 * `Install ThunderGBM <https://rocm.docs.amd.com/projects/thundergbm/en/docs-26.01/install/install.html>`__
