@@ -29,7 +29,7 @@ article_pages = [
     {
         "file": "about/release-notes",
         "os": ["linux"],
-        "date": "",
+        "date": "2026-07-31",  #intended release date, e.g. "2026-07-30"
     },
 ]
 
