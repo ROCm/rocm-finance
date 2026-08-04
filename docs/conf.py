@@ -25,6 +25,14 @@ setting_all_article_info = True
 all_article_info_os = ["linux"]
 all_article_info_author = ""
 
+article_pages = [
+    {
+        "file": "about/release-notes",
+        "os": ["linux"],
+        "date": "2026-07-31",  #intended release date, e.g. "2026-07-30"
+    },
+]
+
 extensions = [
     "rocm_docs",
     "rocm_docs_custom.icon",
