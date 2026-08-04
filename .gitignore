@@ -12,11 +12,7 @@ docBin/
 _doxygen/
 _readthedocs/
 __pycache__/
+docs/about/release-notes.md
 LightGBM
 ThunderGBM
 xgboost
-
-# avoid duplicating due to conf.py
-docs/CHANGELOG.md
-docs/about/release-notes.md
-docs/about/changelog.md
