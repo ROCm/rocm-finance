@@ -75,6 +75,7 @@ Click {fab}`github` to go to the component's source on GitHub.
     </table>
 </div>
 
+
 ## Detailed component changelogs
 
 ### XGBoost 3.2.0
