@@ -9,9 +9,10 @@ import shutil
 import sys
 from pathlib import Path
 
+shutil.copy2("../RELEASE.md", "./about/release-notes.md")
+
 RELEASE_VERSION = "26.05"
 DOCS_DIR = Path(__file__).parent.resolve()
-ROOT_DIR = DOCS_DIR.parent
 
 sys.path.append(str(DOCS_DIR / "_extension"))
 
@@ -49,14 +50,3 @@ latex_elements = {
 \renewcommand\ttdefault{txtt}
 """
 }
-
-
-def copy_rtd_file(src_path: Path, dest_path: Path):
-    dest_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src_path, dest_path)
-    print(f"📁 Copied {src_path} → {dest_path}")
-
-
-gh_release_path = ROOT_DIR / "RELEASE.md"
-rtd_release_path = DOCS_DIR / "about" / "release-notes.md"
-copy_rtd_file(gh_release_path, rtd_release_path)
