@@ -12,7 +12,6 @@ docBin/
 _doxygen/
 _readthedocs/
 __pycache__/
-docs/about/release-notes.md
 LightGBM
 ThunderGBM
 xgboost
