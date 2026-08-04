@@ -15,3 +15,8 @@ __pycache__/
 LightGBM
 ThunderGBM
 xgboost
+
+# avoid duplicating due to conf.py
+docs/CHANGELOG.md
+docs/about/release-notes.md
+docs/about/changelog.md
